@@ -1,0 +1,17 @@
+//
+// Access directory IceFactory.Api
+cd IceFactory.Api
+
+//
+// For first time only
+dotnet ef migrations add ModifyTableUser
+
+//
+// For add edit or remove model
+dotnet ef migrations add [name of entity]
+dotnet ef database update
+
+//
+// After you run "dotnet ef databse update" command success
+// Please delete all generated files in direcotry Migrations
+// in project IceFactory.Api aceptthis file IceFactoryContextModelSnapshot.cs

@@ -1,0 +1,53 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Module\\IceFactory.Module.csproj",
+    "projectName": "IceFactory.Module",
+    "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Module\\IceFactory.Module.csproj",
+    "outputPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Module\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Model\\IceFactory.Model.csproj": {
+            "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Model\\IceFactory.Model.csproj"
+          },
+          "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Repository\\IceFactory.Repository.csproj": {
+            "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Repository\\IceFactory.Repository.csproj"
+          },
+          "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Utility\\IceFactory.Utility.csproj": {
+            "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Utility\\IceFactory.Utility.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

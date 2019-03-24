@@ -1,0 +1,440 @@
+<div class="col-xs-12">
+    <h3 class="smaller lighter blue"> {{currentPage.title}} </h3>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-5 hidden-xs hidden-sm">
+            <div class="profile-user-info profile-user-info-striped">
+                <div class="profile-info-row">
+                    <div class="profile-info-name">สายรถ</div>
+                    <div class="input-group">
+                        <!--<span id="route_name" class="form-control">{{reqData.route_name}}</span>-->
+                        <input type="text" name="txtSearch" class="form-control" readonly
+                               ng-model="reqData.route_name"/>
+
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-sm btn-primary" ng-click="showDlgRoute()">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div class="profile-info-name">พนักงาน</div>
+
+                    <div class="profile-info-value">
+                        <span>{{reqData.transporter1_name}}</span>
+                        <span>{{reqData.transporter2_name}}</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4  hidden-xs hidden-sm">
+            <div class="profile-user-info profile-user-info-striped">
+                <div class="profile-info-row">
+
+                    <div class="profile-info-name">วันที่</div>
+
+                    <div class="profile-info-value">
+                        <span>{{document_date}}</span>
+                    </div>
+                    <div class="profile-info-name">รอบที่</div>
+
+                    <div class="profile-info-value">
+                        <span>{{reqData.round}}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 center">
+            <div id="btnGrp" class="btn-group btn-sm btn-corner">
+                            <span class="btn btn-pink" ng-click="pageClear();">
+                                <i class="ace-icon fa fa-refresh bigger-150"></i>
+                                        ล้างข้อมูล
+                            </span>
+
+                            <span class="btn btn-primary" ng-click="saveData();">
+                                <i class="ace-icon fa fa-save bigger-150"></i>
+                                         บันทึกข้อมูล
+                            </span>
+            </div>
+        </div>
+        <!-- /.col -->
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- PAGE CONTENT BEGINS -->
+
+            <div class="col-xs-8 col-sm-8">
+
+                <table id="tdData" class="table table-striped table-bordered table-hover">
+                    <thead class="thin-border-bottom center">
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <table class="table table-striped table-bordered table-hover">
+                    <thead class="thin-border-bottom center">
+                    <tr>
+                        <th class="center">
+                            ลำดับ
+                        </th>
+
+                        <th class="center">
+                            รายการ
+                        </th>
+
+                        <th class="center">
+                            เบิกทั้งหมด
+                        </th>
+                        <th class="center">
+                            เสียหาย/ชำรุด/ละลาย
+                        </th>
+                        <th class="center">
+                            ส่งคืน
+                        </th>
+                        <th class="center">
+                            ขายทั้งหมด
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td class="center">1</td>
+
+                        <td>
+                            น้ำแข็งหลอดเล็ก (ถุง)
+                        </td>
+                        <td class="align-right">
+                            123
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    1
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    2
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="align-right">
+                            120
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="center">2</td>
+
+                        <td>
+                            น้ำแข็งหลอดใหญ่ (ถุง)
+                        </td>
+                        <td class="align-right">
+                            5
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="align-right">
+                            5
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="center">3</td>
+
+                        <td>
+                            น้ำแข็งหลอดเล็ก
+                        </td>
+                        <td class="align-right">
+                            28
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="align-right">
+                            28
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="center">4</td>
+
+                        <td>
+                            น้ำดื่มไก่
+                        </td>
+                        <td class="align-right">
+                            31
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="align-right">
+                            31
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="center">5</td>
+
+                        <td>
+                            น้ำแข็งหลอดใหญ่
+                        </td>
+                        <td class="align-right">
+                            36
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    1
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="align-right">
+                            35
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">6</td>
+
+                        <td>
+                            กระสอบไก่
+                        </td>
+                        <td class="align-right">
+                            28
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    28
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="align-right">
+                            0
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">7</td>
+
+                        <td>
+                            กระสอบทั่วไป
+                        </td>
+                        <td class="align-right">
+                            36
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    0
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="center middle" style="padding: 5px 0px;">
+                            <div class="btn-group-xs btn-corner">
+                                <button class="btn btn-danger no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i>
+                                </button>
+                                <button type="button" class="btn btn-white btn-pink btn-xs"
+                                        style="width: 40px;" onclick="alertMSG()">
+                                    36
+                                </button>
+                                <button class="btn btn-success no-padding-top no-padding-bottom">
+                                    <i
+                                            class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td class="align-right">
+                            0
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--<div class="col-xs-12 col-sm-8">
+                <div>
+                    <ul id="boxPickProduct" class="ace-thumbnails clearfix pull-left">
+                    </ul>
+                </div>
+            </div>-->
+
+            <!-- PAGE CONTENT ENDS -->
+        </div>
+    </div>
+</div>

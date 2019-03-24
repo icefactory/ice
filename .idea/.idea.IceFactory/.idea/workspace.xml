@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aff34dd8-2c7e-4ced-a53a-77d0b5fb8210" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Utility/Security/Encryption.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <marker date="1550563218000" expanded="false" signature="6:85" ph="..." />
+                <marker date="1550563218000" expanded="true" signature="124:1204" ph="{...}" />
+                <marker date="1550563218000" expanded="true" signature="161:1202" ph="{...}" />
+                <marker date="1550563218000" expanded="true" signature="176:1196" ph="&quot; All other members &quot;" />
+                <marker date="1550563218000" expanded="true" signature="261:1176" ph="{...}" />
+                <marker date="1550563218000" expanded="true" signature="388:1135" ph="{...}" />
+                <marker date="1550563218000" expanded="true" signature="791:1121" ph="{...}" />
+                <marker date="1550563218000" expanded="true" signature="920:1032" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Model/Requisition/RequisitionModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="33" />
+              <folding>
+                <marker date="1553346332000" expanded="false" signature="6:192" ph="..." />
+                <marker date="1553346332000" expanded="true" signature="232:4746" ph="{...}" />
+                <marker date="1553346332000" expanded="true" signature="272:542" ph="{...}" />
+                <marker date="1553346332000" expanded="true" signature="590:1327" ph="{...}" />
+                <marker date="1553346332000" expanded="true" signature="1377:2413" ph="{...}" />
+                <marker date="1553346332000" expanded="true" signature="2468:2937" ph="{...}" />
+                <marker date="1553346332000" expanded="true" signature="2994:3446" ph="{...}" />
+                <marker date="1553346332000" expanded="true" signature="3501:3798" ph="{...}" />
+                <marker date="1553346332000" expanded="true" signature="3855:4189" ph="{...}" />
+                <marker date="1553346332000" expanded="true" signature="4224:4744" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Model/ProductStock/ProductStockModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+              <folding>
+                <marker date="1553362846000" expanded="false" signature="6:192" ph="..." />
+                <marker date="1553362846000" expanded="true" signature="233:1722" ph="{...}" />
+                <marker date="1553362846000" expanded="true" signature="275:443" ph="{...}" />
+                <marker date="1553362846000" expanded="false" signature="290:437" ph="&quot; Static Fields and Constants &quot;" />
+                <marker date="1553362846000" expanded="true" signature="490:900" ph="{...}" />
+                <marker date="1553362846000" expanded="true" signature="955:1031" ph="{...}" />
+                <marker date="1553362846000" expanded="true" signature="1089:1481" ph="{...}" />
+                <marker date="1553362846000" expanded="true" signature="1511:1720" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/ProductModule.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-576">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <marker date="1553363556000" expanded="false" signature="6:484" ph="..." />
+                <marker date="1553363556000" expanded="true" signature="520:11489" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="566:11487" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="653:673" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="683:11481" ph="&quot; Functions for Product &quot;" />
+                <marker date="1553363556000" expanded="true" signature="726:970" ph="///     GetAsync DropDownList ... " />
+                <marker date="1553363556000" expanded="true" signature="1205:1499" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="1346:1487" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="1509:1635" ph="///     GetAsync all Product ... " />
+                <marker date="1553363556000" expanded="true" signature="1698:1962" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="1761:1950" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="1972:2155" ph="///     GetAsync Product by id ... " />
+                <marker date="1553363556000" expanded="true" signature="2219:2379" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="2389:2588" ph="///     Insert new Product to database ... " />
+                <marker date="1553363556000" expanded="true" signature="2675:3385" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="2909:3192" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="3395:3634" ph="///     UpdateAsync Product to database ... " />
+                <marker date="1553363556000" expanded="true" signature="3708:3857" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="3867:4158" ph="///     UpdateAsync Product status from Enabled to Disabled ... " />
+                <marker date="1553363556000" expanded="true" signature="4204:4785" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="4394:4584" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="4795:5127" ph="///     UpdateAsync list of Product status from Enabled to Disabled ... " />
+                <marker date="1553363556000" expanded="true" signature="5189:5942" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="5408:5659" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="5738:5900" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="6029:6480" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="6055:6311" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="6344:6421" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="6441:6470" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="6568:7177" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="6594:7008" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="7041:7118" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="7138:7167" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="7253:9447" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="7279:9278" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="7310:8110" ph="/* var Products = UnitOfWork.ProductRepository.Filter(p =&gt; ids.Contains(p.product_id)); ... */" />
+                <marker date="1553363556000" expanded="true" signature="8208:9264" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="9069:9183" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="9311:9388" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="9408:9437" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="9525:11460" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="9551:11291" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="9582:10382" ph="/* var Products = UnitOfWork.ProductRepository.Filter(p =&gt; ids.Contains(p.product_id)); ... */" />
+                <marker date="1553363556000" expanded="true" signature="10480:11277" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="11082:11196" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="11324:11401" ph="{...}" />
+                <marker date="1553363556000" expanded="true" signature="11421:11450" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/RouteModule.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+              <folding>
+                <marker date="1551602884000" expanded="false" signature="6:366" ph="..." />
+                <marker date="1551602884000" expanded="true" signature="402:6191" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="446:6189" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="531:551" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="561:6182" ph="&quot; Functions for Unit &quot;" />
+                <marker date="1551602884000" expanded="true" signature="601:845" ph="///     GetAsync DropDownList ... " />
+                <marker date="1551602884000" expanded="true" signature="1073:1329" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="1182:1317" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="1339:1459" ph="///     GetAsync all unit ... " />
+                <marker date="1551602884000" expanded="true" signature="1520:1745" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="1583:1733" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="1755:1929" ph="///     GetAsync unit by id ... " />
+                <marker date="1551602884000" expanded="true" signature="1989:2156" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="2166:2356" ph="///     Insert new unit to database ... " />
+                <marker date="1551602884000" expanded="true" signature="2439:3047" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="2599:2873" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="3057:3284" ph="///     UpdateAsync unit to database ... " />
+                <marker date="1551602884000" expanded="true" signature="3354:3482" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="3492:3774" ph="///     UpdateAsync unit status from Enabled to Disabled ... " />
+                <marker date="1551602884000" expanded="true" signature="3822:4374" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="4003:4187" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="4384:4707" ph="///     UpdateAsync list of unit status from Enabled to Disabled ... " />
+                <marker date="1551602884000" expanded="true" signature="4767:5482" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="4974:5219" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="5292:5440" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="5567:6163" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="5593:5994" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="6027:6104" ph="{...}" />
+                <marker date="1551602884000" expanded="true" signature="6124:6153" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Model/Master/RouteModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding>
+                <marker date="1551714184000" expanded="false" signature="6:140" ph="..." />
+                <marker date="1551714184000" expanded="true" signature="175:1248" ph="{...}" />
+                <marker date="1551714184000" expanded="true" signature="223:589" ph="{...}" />
+                <marker date="1551714184000" expanded="true" signature="621:1022" ph="{...}" />
+                <marker date="1551714184000" expanded="true" signature="1053:1246" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/CustomerModule.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding>
+                <marker date="1553239724000" expanded="false" signature="6:366" ph="..." />
+                <marker date="1553239724000" expanded="true" signature="402:6423" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="449:6421" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="537:557" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="567:6414" ph="&quot; Functions for Unit &quot;" />
+                <marker date="1553239724000" expanded="true" signature="607:851" ph="///     GetAsync DropDownList ... " />
+                <marker date="1553239724000" expanded="true" signature="1085:1376" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="1197:1364" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="1386:1506" ph="///     GetAsync all unit ... " />
+                <marker date="1553239724000" expanded="true" signature="1570:1798" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="1633:1786" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="1808:1982" ph="///     GetAsync unit by id ... " />
+                <marker date="1553239724000" expanded="true" signature="2045:2215" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="2225:2415" ph="///     Insert new unit to database ... " />
+                <marker date="1553239724000" expanded="true" signature="2504:3122" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="2667:2948" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="3132:3359" ph="///     UpdateAsync unit to database ... " />
+                <marker date="1553239724000" expanded="true" signature="3435:3563" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="3573:3855" ph="///     UpdateAsync unit status from Enabled to Disabled ... " />
+                <marker date="1553239724000" expanded="true" signature="3903:4455" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="4084:4268" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="4465:4788" ph="///     UpdateAsync list of unit status from Enabled to Disabled ... " />
+                <marker date="1553239724000" expanded="true" signature="4848:5563" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="5055:5300" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="5373:5521" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="5654:6395" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="5680:6226" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="6259:6336" ph="{...}" />
+                <marker date="1553239724000" expanded="true" signature="6356:6385" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Module/ReturnRequisition/ReturnRequisitionModule.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3492">
+              <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
+              <folding>
+                <marker date="1553226030000" expanded="false" signature="6:601" ph="..." />
+                <marker date="1553226030000" expanded="true" signature="649:15142" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="705:15140" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="802:822" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="832:15134" ph="&quot; Functions for Product &quot;" />
+                <marker date="1553226030000" expanded="true" signature="875:1119" ph="///     GetAsync DropDownList ... " />
+                <marker date="1553226030000" expanded="true" signature="1384:1618" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="1628:1754" ph="///     GetAsync all Product ... " />
+                <marker date="1553226030000" expanded="true" signature="1827:2115" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="1890:2103" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="2125:2308" ph="///     GetAsync Product by id ... " />
+                <marker date="1553226030000" expanded="true" signature="2382:2560" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="2570:2769" ph="///     Insert new Product to database ... " />
+                <marker date="1553226030000" expanded="true" signature="2879:6607" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="2905:6486" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="3135:4123" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="3216:3533" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="3582:4105" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="3851:4051" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="4302:4610" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="4631:4761" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="4878:6438" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="5033:5477" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="5502:5640" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="6519:6596" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="6617:6856" ph="///     UpdateAsync Product to database ... " />
+                <marker date="1553226030000" expanded="true" signature="6958:7310" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="6981:7271" ph="/* var ent = UnitOfWork.Context.Entry&lt;ProductStockModel&gt;(Product); ... */" />
+                <marker date="1553226030000" expanded="true" signature="7320:7611" ph="///     UpdateAsync Product status from Enabled to Disabled ... " />
+                <marker date="1553226030000" expanded="true" signature="7657:8238" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="7847:8037" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="8248:8580" ph="///     UpdateAsync list of Product status from Enabled to Disabled ... " />
+                <marker date="1553226030000" expanded="true" signature="8642:9395" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="8861:9112" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="9191:9353" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="9491:10581" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="9517:10412" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="10445:10522" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="10542:10571" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="10699:11779" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="10725:11610" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="11643:11720" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="11740:11769" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="11856:12973" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="11882:12804" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="11993:12790" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="12595:12709" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="12837:12914" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="12934:12963" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="13106:14515" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="13132:14346" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="13499:13670" ph="/* List&lt;vwReturnRequisitionModel&gt; dd = UnitOfWork.Context.Query&lt;vwReturnRequisitionModel&gt;().FromSql(sql).ToList() ... */" />
+                <marker date="1553226030000" expanded="true" signature="13870:14331" ph="/* objData._master = UnitOfWork.Context.Set&lt;ReturnRequisitionModel&gt;().Where(w =&gt; w.requisition_id.Equals(i)).Firs ... */" />
+                <marker date="1553226030000" expanded="true" signature="14379:14456" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="14476:14505" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="14609:15114" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="14635:14945" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="14978:15055" ph="{...}" />
+                <marker date="1553226030000" expanded="true" signature="15075:15104" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Model/Master/UserModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="25" />
+              <folding>
+                <marker date="1553370170000" expanded="false" signature="6:192" ph="..." />
+                <marker date="1553370170000" expanded="true" signature="227:1598" ph="{...}" />
+                <marker date="1553370170000" expanded="true" signature="234:451" ph="/* public static class StatusOfProduct ... */" />
+                <marker date="1553370170000" expanded="true" signature="490:1126" ph="{...}" />
+                <marker date="1553370170000" expanded="true" signature="1170:1249" ph="{...}" />
+                <marker date="1553370170000" expanded="true" signature="1291:1421" ph="{...}" />
+                <marker date="1553370170000" expanded="true" signature="1450:1596" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/UserModule.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="27" />
+              <folding>
+                <marker date="1553370192000" expanded="false" signature="6:366" ph="..." />
+                <marker date="1553370192000" expanded="true" signature="402:6161" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="445:6159" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="529:549" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="559:6152" ph="&quot; Functions for Unit &quot;" />
+                <marker date="1553370192000" expanded="true" signature="599:843" ph="///     GetAsync DropDownList ... " />
+                <marker date="1553370192000" expanded="true" signature="1069:1321" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="1177:1309" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="1331:1451" ph="///     GetAsync all unit ... " />
+                <marker date="1553370192000" expanded="true" signature="1511:1735" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="1574:1723" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="1745:1919" ph="///     GetAsync unit by id ... " />
+                <marker date="1553370192000" expanded="true" signature="1978:2143" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="2153:2343" ph="///     Insert new unit to database ... " />
+                <marker date="1553370192000" expanded="true" signature="2424:3027" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="2582:2853" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="3037:3264" ph="///     UpdateAsync unit to database ... " />
+                <marker date="1553370192000" expanded="true" signature="3332:3460" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="3470:3752" ph="///     UpdateAsync unit status from Enabled to Disabled ... " />
+                <marker date="1553370192000" expanded="true" signature="3800:4352" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="3981:4165" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="4362:4685" ph="///     UpdateAsync list of unit status from Enabled to Disabled ... " />
+                <marker date="1553370192000" expanded="true" signature="4745:5460" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="4952:5197" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="5270:5418" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="5543:6133" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="5569:5964" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="5997:6074" ph="{...}" />
+                <marker date="1553370192000" expanded="true" signature="6094:6123" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/IceFactory.Api/Controllers/Admin/Master/CustomerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Api/Controllers/Admin/IceBucket/IceBucketController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Module/Master/RouteModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Module/Master/ProductModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Module/Master/UnitModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Repository/Repository/Master/UnitRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Repository/Repository/Repository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryContext.cs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Model/ProductStock/ProductStockModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Model/Requisition/RequisitionModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../AppData/Roaming/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files (x86)/NuGet/Config/Microsoft.VisualStudio.Offline.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Model/Master/RouteModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Model/Master/UserModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Module/Master/CustomerModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryContextFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Module/Master/UserModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryInitializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Module/ReturnRequisition/ReturnRequisitionModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IceFactory.Utility/Security/Encryption.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/IceFactory.FrontEnd/public/app/app.js" />
+        <option value="$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryContext.cs.cs" />
+        <option value="$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryContextFactory.cs" />
+        <option value="$PROJECT_DIR$/IceFactory.Module/Master/UnitModule.cs" />
+        <option value="$PROJECT_DIR$/IceFactory.Api/Startup.cs" />
+        <option value="$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryInitializer.cs" />
+        <option value="$PROJECT_DIR$/IceFactory.Api/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/IceFactory.Api/Controllers/Security/AuthenticationController.cs" />
+        <option value="$PROJECT_DIR$/IceFactory.Module/Security/AuthenticationModule.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="720" />
+    <option name="width" value="720" />
+    <option name="height" value="870" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="false" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="IceFactory" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Api" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Api.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/IceFactory.Api" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/IceFactory.Api/IceFactory.Api.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser url="http://localhost:5000" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aff34dd8-2c7e-4ced-a53a-77d0b5fb8210" name="Default" comment="" />
+      <created>1546153095380</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546153095380</updated>
+      <workItem from="1546153097225" duration="269000" />
+      <workItem from="1546153990925" duration="3066000" />
+      <workItem from="1547354246403" duration="296000" />
+      <workItem from="1547484679881" duration="597000" />
+      <workItem from="1547879113276" duration="3826000" />
+      <workItem from="1548075129375" duration="959000" />
+      <workItem from="1550553879983" duration="5130000" />
+      <workItem from="1550671111627" duration="1084000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18485000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1935" height="1175" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73277664" visible="true" weight="0.18566078" />
+      <window_info id="Structure" order="1" sideWeight="0.2672234" side_tool="true" weight="0.24009702" />
+      <window_info id="Favorites" order="2" sideWeight="0.23489933" side_tool="true" weight="0.21018593" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.88978064" visible="true" weight="0.26646402" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.77930474" weight="0.23176661" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4987874" weight="0.3273906" />
+      <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.7938561" weight="0.4863124" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="10" sideWeight="0.4987874" weight="0.22204214" />
+      <window_info anchor="bottom" id="REST Client" order="11" sideWeight="0.74130964" weight="0.30470017" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.8399353" weight="0.2689211" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.11021937" side_tool="true" visible="true" weight="0.26646402" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" sideWeight="0.73484236" weight="0.29011345" />
+      <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.49010167" weight="0.29787233" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32955465" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/IceFactory.FrontEnd/server.js" />
+    <entry file="file://C:/Program Files (x86)/NuGet/Config/Microsoft.VisualStudio.Offline.config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppData/Roaming/NuGet/NuGet.Config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.FrontEnd/public/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.FrontEnd/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Module/IceFactory.Module.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Repository/Repository/Repository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3570">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <marker date="1550563217595" expanded="false" signature="6:318" ph="..." />
+            <marker date="1550563217595" expanded="true" signature="362:9398" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="446:9396" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="461:525" ph="///     The db set. ... " />
+            <marker date="1550563217595" expanded="true" signature="583:648" ph="///     The context. ... " />
+            <marker date="1550563217595" expanded="true" signature="712:915" ph="///     Initializes a new instance of the &lt;see cref=&quot;T:IceFactory.Repository.GenericRepository`1&quot; /&gt; class. ... " />
+            <marker date="1550563217595" expanded="true" signature="971:1067" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="1077:1270" ph="///     Gets the context. ... " />
+            <marker date="1550563217595" expanded="true" signature="1319:1419" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="1429:1569" ph="///     Gets the count. ... " />
+            <marker date="1550563217595" expanded="true" signature="1647:1806" ph="///     Alls this instance. ... " />
+            <marker date="1550563217595" expanded="true" signature="1855:1902" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="1912:2294" ph="///     Gets objects via optional filter, sort order, and includes. ... " />
+            <marker date="1550563217595" expanded="true" signature="2501:2892" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="2902:3084" ph="///     Gets model by id. ... " />
+            <marker date="1550563217595" expanded="true" signature="3151:3218" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="3228:3465" ph="///     Gets objects from database by filter. ... " />
+            <marker date="1550563217595" expanded="true" signature="3558:3636" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="3646:4086" ph="///     Gets objects from database with filtering and paging. ... " />
+            <marker date="1550563217595" expanded="true" signature="4229:4538" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="4548:4813" ph="///     Get objects from database with raw sql syntext ... " />
+            <marker date="1550563217595" expanded="true" signature="4930:5037" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="5047:5356" ph="///     Gets the object(s) is exists in database by specified filter. ... " />
+            <marker date="1550563217595" expanded="true" signature="5445:5518" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="5528:5751" ph="///     Find object by specified expression. ... " />
+            <marker date="1550563217595" expanded="true" signature="5847:5931" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="5941:6163" ph="///     Insert a new object to database. ... " />
+            <marker date="1550563217595" expanded="true" signature="6247:6317" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="6327:6552" ph="///     Insert list of new objects to database. ... " />
+            <marker date="1550563217595" expanded="true" signature="6634:6704" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="6714:6875" ph="///     Deletes the object by primary key ... " />
+            <marker date="1550563217595" expanded="true" signature="6932:7060" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="7070:7267" ph="///     DeleteAsync the object from database. ... " />
+            <marker date="1550563217595" expanded="true" signature="7329:7696" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="7385:7684" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="7416:7533" ph="/* DbSet.Attach(entity); ... */" />
+            <marker date="1550563217595" expanded="true" signature="7706:7911" ph="///     DeleteAsync objects from database by specified filter expression. ... " />
+            <marker date="1550563217595" expanded="true" signature="8000:8139" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="8149:8324" ph="///     UpdateAsync the object to database ... " />
+            <marker date="1550563217595" expanded="true" signature="8386:8589" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="8442:8577" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="8599:8778" ph="///     UpdateAsync the objects to database ... " />
+            <marker date="1550563217595" expanded="true" signature="8855:8947" ph="{...}" />
+            <marker date="1550563217595" expanded="true" signature="8957:9162" ph="///     UpdateAsync objects form database by specified filter expression. ... " />
+            <marker date="1550563217595" expanded="true" signature="9251:9390" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Repository/Repository/Master/UnitRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <marker date="1550563217531" expanded="false" signature="6:141" ph="..." />
+            <marker date="1550563217531" expanded="true" signature="192:352" ph="{...}" />
+            <marker date="1550563217531" expanded="true" signature="245:350" ph="{...}" />
+            <marker date="1550563217531" expanded="true" signature="324:344" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryContext.cs.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1550572846980" expanded="false" signature="6:134" ph="..." />
+            <marker date="1550572846980" expanded="true" signature="182:1039" ph="{...}" />
+            <marker date="1550572846980" expanded="true" signature="231:1037" ph="{...}" />
+            <marker date="1550572846980" expanded="true" signature="247:639" ph="&quot; Constructors &quot;" />
+            <marker date="1550572846980" expanded="true" signature="281:524" ph="///     Initializes a new instance of the &lt;see cref=&quot;T:IceFactory.Repository.Infrastructure.IceFactoryContext&quot; /&gt; ... " />
+            <marker date="1550572846980" expanded="true" signature="599:619" ph="{...}" />
+            <marker date="1550572846980" expanded="true" signature="649:1030" ph="&quot; Properties, Indexers &quot;" />
+            <marker date="1550572846980" expanded="true" signature="691:963" ph="/* Add a DbSet for each entity type that you want to include in your model. For more information ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/UnitModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <marker date="1550573079479" expanded="false" signature="6:366" ph="..." />
+            <marker date="1550573079479" expanded="true" signature="402:5486" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="445:5484" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="529:549" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="559:5477" ph="&quot; Functions for Unit &quot;" />
+            <marker date="1550573079479" expanded="true" signature="599:843" ph="///     GetAsync DropDownList ... " />
+            <marker date="1550573079479" expanded="true" signature="1054:1323" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="1192:1311" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="1333:1453" ph="///     GetAsync all unit ... " />
+            <marker date="1550573079479" expanded="true" signature="1508:1737" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="1571:1725" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="1747:1921" ph="///     GetAsync unit by id ... " />
+            <marker date="1550573079479" expanded="true" signature="1975:2124" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="2134:2324" ph="///     Insert new unit to database ... " />
+            <marker date="1550573079479" expanded="true" signature="2392:3024" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="2597:2844" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="3034:3261" ph="///     UpdateAsync unit to database ... " />
+            <marker date="1550573079479" expanded="true" signature="3324:3464" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="3474:3756" ph="///     UpdateAsync unit status from Enabled to Disabled ... " />
+            <marker date="1550573079479" expanded="true" signature="3802:4354" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="3983:4167" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="4364:4687" ph="///     UpdateAsync list of unit status from Enabled to Disabled ... " />
+            <marker date="1550573079479" expanded="true" signature="4747:5457" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="4949:5194" ph="{...}" />
+            <marker date="1550573079479" expanded="true" signature="5267:5415" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryContextFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <marker date="1550572846955" expanded="false" signature="6:146" ph="..." />
+            <marker date="1550572846955" expanded="true" signature="194:2054" ph="{...}" />
+            <marker date="1550572846955" expanded="true" signature="267:2052" ph="{...}" />
+            <marker date="1550572846955" expanded="true" signature="282:356" ph="///     The connection string ... " />
+            <marker date="1550572846955" expanded="true" signature="417:494" ph="///     Database context options ... " />
+            <marker date="1550572846955" expanded="true" signature="547:750" ph="///     Initializes a new instance of the &lt;see cref=&quot;IceFactoryContextFactory&quot; /&gt; class. ... " />
+            <marker date="1550572846955" expanded="true" signature="815:885" ph="{...}" />
+            <marker date="1550572846955" expanded="true" signature="895:1143" ph="///     Initializes a new instance of the ... " />
+            <marker date="1550572846955" expanded="true" signature="1209:1261" ph="{...}" />
+            <marker date="1550572846955" expanded="true" signature="1271:1363" ph="///     Current client name that user selected. ... " />
+            <marker date="1550572846955" expanded="true" signature="1428:1651" ph="///     Creates new database context. ... " />
+            <marker date="1550572846955" expanded="true" signature="1685:2046" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/Microsoft.Common.CurrentVersion.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="4360" column="55" lean-forward="true" selection-start-line="4360" selection-start-column="55" selection-end-line="4360" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Api/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2988">
+          <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
+          <folding>
+            <marker date="1550984732000" expanded="false" signature="6:771" ph="..." />
+            <marker date="1550984732000" expanded="true" signature="797:8007" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="824:8005" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="883:946" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="1046:1143" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="1312:5289" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="1511:1583" ph="/* Dependency Inject Core unit of work to all controller. ... */" />
+            <marker date="1550984732000" expanded="true" signature="1707:1743" ph="/* Config cors origin ... */" />
+            <marker date="1550984732000" expanded="true" signature="1783:2605" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="1878:2197" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="2218:2591" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="2686:3160" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="2771:3144" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="3174:3227" ph="/* Add authentication for use this API ... */" />
+            <marker date="1550984732000" expanded="true" signature="3277:3486" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="3599:4607" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="4127:4533" ph="/* This defines the maximum allowable clock skew - i.e. provides a tolerance on the token expiry time ... */" />
+            <marker date="1550984732000" expanded="true" signature="4623:4678" ph="/* Config authorization for use this API ... */" />
+            <marker date="1550984732000" expanded="true" signature="4724:4991" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="5007:5048" ph="/* Add framework services. ... */" />
+            <marker date="1550984732000" expanded="true" signature="5556:7999" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="5717:5794" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="5811:5870" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="5884:6006" ph="/* Forward http headers use for run this system under reverse proxy ... */" />
+            <marker date="1550984732000" expanded="true" signature="6096:7608" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="6166:7592" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="6460:6879" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="6732:6854" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="7008:7421" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="7280:7396" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="7492:7574" ph="{...}" />
+            <marker date="1550984732000" expanded="true" signature="7624:7674" ph="/* Shows UseCors with named policy. ... */" />
+            <marker date="1550984732000" expanded="true" signature="7829:7912" ph="/* Initial data to database when create new database for first time. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Repository/Infrastructure/IceFactoryInitializer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <marker date="1550581252000" expanded="false" signature="6:96" ph="..." />
+            <marker date="1550581252000" expanded="true" signature="144:389" ph="{...}" />
+            <marker date="1550581252000" expanded="true" signature="192:387" ph="{...}" />
+            <marker date="1550581252000" expanded="true" signature="297:374" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Api/How_To_Deploy.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Api/How_To_Migration_Database.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Api/Controllers/Admin/Master/CustomerController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-743">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <marker date="1553237812000" expanded="false" signature="6:257" ph="..." />
+            <marker date="1553237812000" expanded="true" signature="308:2780" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="401:2778" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="546:623" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="689:945" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="715:799" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="831:935" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1060:1323" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1086:1177" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1209:1313" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1401:1681" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1427:1535" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1567:1671" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1789:2050" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1815:1904" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="1936:2040" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="2158:2419" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="2184:2273" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="2305:2409" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="2515:2771" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="2541:2625" ph="{...}" />
+            <marker date="1553237812000" expanded="true" signature="2657:2761" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Api/Controllers/Admin/IceBucket/IceBucketController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <marker date="1553340422000" expanded="true" signature="6:215" ph="..." />
+            <marker date="1553340422000" expanded="true" signature="269:3340" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="363:3338" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="510:588" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="654:911" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="680:765" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="797:901" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="989:1250" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="1015:1104" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="1136:1240" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="1341:1712" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="1367:1566" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="1598:1702" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="1830:2087" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="1856:1941" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="1973:2077" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="2211:2571" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="2237:2323" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="2355:2561" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="2691:2952" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="2717:2806" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="2838:2942" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="3064:3331" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="3090:3185" ph="{...}" />
+            <marker date="1553340422000" expanded="true" signature="3217:3321" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Api/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="97" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Api/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Model/Master/UserModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <marker date="1553370170000" expanded="false" signature="6:192" ph="..." />
+            <marker date="1553370170000" expanded="true" signature="227:1598" ph="{...}" />
+            <marker date="1553370170000" expanded="true" signature="234:451" ph="/* public static class StatusOfProduct ... */" />
+            <marker date="1553370170000" expanded="true" signature="490:1126" ph="{...}" />
+            <marker date="1553370170000" expanded="true" signature="1170:1249" ph="{...}" />
+            <marker date="1553370170000" expanded="true" signature="1291:1421" ph="{...}" />
+            <marker date="1553370170000" expanded="true" signature="1450:1596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/UserModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <marker date="1553370192000" expanded="false" signature="6:366" ph="..." />
+            <marker date="1553370192000" expanded="true" signature="402:6161" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="445:6159" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="529:549" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="559:6152" ph="&quot; Functions for Unit &quot;" />
+            <marker date="1553370192000" expanded="true" signature="599:843" ph="///     GetAsync DropDownList ... " />
+            <marker date="1553370192000" expanded="true" signature="1069:1321" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="1177:1309" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="1331:1451" ph="///     GetAsync all unit ... " />
+            <marker date="1553370192000" expanded="true" signature="1511:1735" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="1574:1723" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="1745:1919" ph="///     GetAsync unit by id ... " />
+            <marker date="1553370192000" expanded="true" signature="1978:2143" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="2153:2343" ph="///     Insert new unit to database ... " />
+            <marker date="1553370192000" expanded="true" signature="2424:3027" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="2582:2853" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="3037:3264" ph="///     UpdateAsync unit to database ... " />
+            <marker date="1553370192000" expanded="true" signature="3332:3460" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="3470:3752" ph="///     UpdateAsync unit status from Enabled to Disabled ... " />
+            <marker date="1553370192000" expanded="true" signature="3800:4352" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="3981:4165" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="4362:4685" ph="///     UpdateAsync list of unit status from Enabled to Disabled ... " />
+            <marker date="1553370192000" expanded="true" signature="4745:5460" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="4952:5197" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="5270:5418" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="5543:6133" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="5569:5964" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="5997:6074" ph="{...}" />
+            <marker date="1553370192000" expanded="true" signature="6094:6123" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Api/Controllers/Security/AuthenticationController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/ProductModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <marker date="1553363556000" expanded="false" signature="6:484" ph="..." />
+            <marker date="1553363556000" expanded="true" signature="520:11489" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="566:11487" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="653:673" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="683:11481" ph="&quot; Functions for Product &quot;" />
+            <marker date="1553363556000" expanded="true" signature="726:970" ph="///     GetAsync DropDownList ... " />
+            <marker date="1553363556000" expanded="true" signature="1205:1499" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="1346:1487" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="1509:1635" ph="///     GetAsync all Product ... " />
+            <marker date="1553363556000" expanded="true" signature="1698:1962" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="1761:1950" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="1972:2155" ph="///     GetAsync Product by id ... " />
+            <marker date="1553363556000" expanded="true" signature="2219:2379" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="2389:2588" ph="///     Insert new Product to database ... " />
+            <marker date="1553363556000" expanded="true" signature="2675:3385" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="2909:3192" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="3395:3634" ph="///     UpdateAsync Product to database ... " />
+            <marker date="1553363556000" expanded="true" signature="3708:3857" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="3867:4158" ph="///     UpdateAsync Product status from Enabled to Disabled ... " />
+            <marker date="1553363556000" expanded="true" signature="4204:4785" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="4394:4584" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="4795:5127" ph="///     UpdateAsync list of Product status from Enabled to Disabled ... " />
+            <marker date="1553363556000" expanded="true" signature="5189:5942" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="5408:5659" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="5738:5900" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="6029:6480" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="6055:6311" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="6344:6421" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="6441:6470" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="6568:7177" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="6594:7008" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="7041:7118" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="7138:7167" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="7253:9447" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="7279:9278" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="7310:8110" ph="/* var Products = UnitOfWork.ProductRepository.Filter(p =&gt; ids.Contains(p.product_id)); ... */" />
+            <marker date="1553363556000" expanded="true" signature="8208:9264" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="9069:9183" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="9311:9388" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="9408:9437" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="9525:11460" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="9551:11291" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="9582:10382" ph="/* var Products = UnitOfWork.ProductRepository.Filter(p =&gt; ids.Contains(p.product_id)); ... */" />
+            <marker date="1553363556000" expanded="true" signature="10480:11277" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="11082:11196" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="11324:11401" ph="{...}" />
+            <marker date="1553363556000" expanded="true" signature="11421:11450" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/RouteModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <marker date="1551602884000" expanded="false" signature="6:366" ph="..." />
+            <marker date="1551602884000" expanded="true" signature="402:6191" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="446:6189" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="531:551" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="561:6182" ph="&quot; Functions for Unit &quot;" />
+            <marker date="1551602884000" expanded="true" signature="601:845" ph="///     GetAsync DropDownList ... " />
+            <marker date="1551602884000" expanded="true" signature="1073:1329" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="1182:1317" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="1339:1459" ph="///     GetAsync all unit ... " />
+            <marker date="1551602884000" expanded="true" signature="1520:1745" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="1583:1733" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="1755:1929" ph="///     GetAsync unit by id ... " />
+            <marker date="1551602884000" expanded="true" signature="1989:2156" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="2166:2356" ph="///     Insert new unit to database ... " />
+            <marker date="1551602884000" expanded="true" signature="2439:3047" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="2599:2873" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="3057:3284" ph="///     UpdateAsync unit to database ... " />
+            <marker date="1551602884000" expanded="true" signature="3354:3482" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="3492:3774" ph="///     UpdateAsync unit status from Enabled to Disabled ... " />
+            <marker date="1551602884000" expanded="true" signature="3822:4374" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="4003:4187" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="4384:4707" ph="///     UpdateAsync list of unit status from Enabled to Disabled ... " />
+            <marker date="1551602884000" expanded="true" signature="4767:5482" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="4974:5219" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="5292:5440" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="5567:6163" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="5593:5994" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="6027:6104" ph="{...}" />
+            <marker date="1551602884000" expanded="true" signature="6124:6153" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Model/Master/RouteModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <marker date="1551714184000" expanded="false" signature="6:140" ph="..." />
+            <marker date="1551714184000" expanded="true" signature="175:1248" ph="{...}" />
+            <marker date="1551714184000" expanded="true" signature="223:589" ph="{...}" />
+            <marker date="1551714184000" expanded="true" signature="621:1022" ph="{...}" />
+            <marker date="1551714184000" expanded="true" signature="1053:1246" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Module/ReturnRequisition/ReturnRequisitionModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3492">
+          <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
+          <folding>
+            <marker date="1553226030000" expanded="false" signature="6:601" ph="..." />
+            <marker date="1553226030000" expanded="true" signature="649:15142" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="705:15140" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="802:822" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="832:15134" ph="&quot; Functions for Product &quot;" />
+            <marker date="1553226030000" expanded="true" signature="875:1119" ph="///     GetAsync DropDownList ... " />
+            <marker date="1553226030000" expanded="true" signature="1384:1618" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="1628:1754" ph="///     GetAsync all Product ... " />
+            <marker date="1553226030000" expanded="true" signature="1827:2115" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="1890:2103" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="2125:2308" ph="///     GetAsync Product by id ... " />
+            <marker date="1553226030000" expanded="true" signature="2382:2560" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="2570:2769" ph="///     Insert new Product to database ... " />
+            <marker date="1553226030000" expanded="true" signature="2879:6607" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="2905:6486" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="3135:4123" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="3216:3533" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="3582:4105" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="3851:4051" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="4302:4610" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="4631:4761" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="4878:6438" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="5033:5477" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="5502:5640" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="6519:6596" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="6617:6856" ph="///     UpdateAsync Product to database ... " />
+            <marker date="1553226030000" expanded="true" signature="6958:7310" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="6981:7271" ph="/* var ent = UnitOfWork.Context.Entry&lt;ProductStockModel&gt;(Product); ... */" />
+            <marker date="1553226030000" expanded="true" signature="7320:7611" ph="///     UpdateAsync Product status from Enabled to Disabled ... " />
+            <marker date="1553226030000" expanded="true" signature="7657:8238" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="7847:8037" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="8248:8580" ph="///     UpdateAsync list of Product status from Enabled to Disabled ... " />
+            <marker date="1553226030000" expanded="true" signature="8642:9395" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="8861:9112" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="9191:9353" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="9491:10581" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="9517:10412" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="10445:10522" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="10542:10571" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="10699:11779" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="10725:11610" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="11643:11720" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="11740:11769" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="11856:12973" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="11882:12804" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="11993:12790" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="12595:12709" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="12837:12914" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="12934:12963" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="13106:14515" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="13132:14346" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="13499:13670" ph="/* List&lt;vwReturnRequisitionModel&gt; dd = UnitOfWork.Context.Query&lt;vwReturnRequisitionModel&gt;().FromSql(sql).ToList() ... */" />
+            <marker date="1553226030000" expanded="true" signature="13870:14331" ph="/* objData._master = UnitOfWork.Context.Set&lt;ReturnRequisitionModel&gt;().Where(w =&gt; w.requisition_id.Equals(i)).Firs ... */" />
+            <marker date="1553226030000" expanded="true" signature="14379:14456" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="14476:14505" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="14609:15114" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="14635:14945" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="14978:15055" ph="{...}" />
+            <marker date="1553226030000" expanded="true" signature="15075:15104" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Module/Master/CustomerModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <marker date="1553239724000" expanded="false" signature="6:366" ph="..." />
+            <marker date="1553239724000" expanded="true" signature="402:6423" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="449:6421" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="537:557" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="567:6414" ph="&quot; Functions for Unit &quot;" />
+            <marker date="1553239724000" expanded="true" signature="607:851" ph="///     GetAsync DropDownList ... " />
+            <marker date="1553239724000" expanded="true" signature="1085:1376" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="1197:1364" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="1386:1506" ph="///     GetAsync all unit ... " />
+            <marker date="1553239724000" expanded="true" signature="1570:1798" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="1633:1786" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="1808:1982" ph="///     GetAsync unit by id ... " />
+            <marker date="1553239724000" expanded="true" signature="2045:2215" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="2225:2415" ph="///     Insert new unit to database ... " />
+            <marker date="1553239724000" expanded="true" signature="2504:3122" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="2667:2948" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="3132:3359" ph="///     UpdateAsync unit to database ... " />
+            <marker date="1553239724000" expanded="true" signature="3435:3563" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="3573:3855" ph="///     UpdateAsync unit status from Enabled to Disabled ... " />
+            <marker date="1553239724000" expanded="true" signature="3903:4455" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="4084:4268" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="4465:4788" ph="///     UpdateAsync list of unit status from Enabled to Disabled ... " />
+            <marker date="1553239724000" expanded="true" signature="4848:5563" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="5055:5300" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="5373:5521" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="5654:6395" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="5680:6226" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="6259:6336" ph="{...}" />
+            <marker date="1553239724000" expanded="true" signature="6356:6385" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Module/Security/AuthenticationModule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Utility/Security/Encryption.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <marker date="1550563218000" expanded="false" signature="6:85" ph="..." />
+            <marker date="1550563218000" expanded="true" signature="124:1204" ph="{...}" />
+            <marker date="1550563218000" expanded="true" signature="161:1202" ph="{...}" />
+            <marker date="1550563218000" expanded="true" signature="176:1196" ph="&quot; All other members &quot;" />
+            <marker date="1550563218000" expanded="true" signature="261:1176" ph="{...}" />
+            <marker date="1550563218000" expanded="true" signature="388:1135" ph="{...}" />
+            <marker date="1550563218000" expanded="true" signature="791:1121" ph="{...}" />
+            <marker date="1550563218000" expanded="true" signature="920:1032" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Model/Requisition/RequisitionModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <marker date="1553346332000" expanded="false" signature="6:192" ph="..." />
+            <marker date="1553346332000" expanded="true" signature="232:4746" ph="{...}" />
+            <marker date="1553346332000" expanded="true" signature="272:542" ph="{...}" />
+            <marker date="1553346332000" expanded="true" signature="590:1327" ph="{...}" />
+            <marker date="1553346332000" expanded="true" signature="1377:2413" ph="{...}" />
+            <marker date="1553346332000" expanded="true" signature="2468:2937" ph="{...}" />
+            <marker date="1553346332000" expanded="true" signature="2994:3446" ph="{...}" />
+            <marker date="1553346332000" expanded="true" signature="3501:3798" ph="{...}" />
+            <marker date="1553346332000" expanded="true" signature="3855:4189" ph="{...}" />
+            <marker date="1553346332000" expanded="true" signature="4224:4744" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IceFactory.Model/ProductStock/ProductStockModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+          <folding>
+            <marker date="1553362846000" expanded="false" signature="6:192" ph="..." />
+            <marker date="1553362846000" expanded="true" signature="233:1722" ph="{...}" />
+            <marker date="1553362846000" expanded="true" signature="275:443" ph="{...}" />
+            <marker date="1553362846000" expanded="false" signature="290:437" ph="&quot; Static Fields and Constants &quot;" />
+            <marker date="1553362846000" expanded="true" signature="490:900" ph="{...}" />
+            <marker date="1553362846000" expanded="true" signature="955:1031" ph="{...}" />
+            <marker date="1553362846000" expanded="true" signature="1089:1481" ph="{...}" />
+            <marker date="1553362846000" expanded="true" signature="1511:1720" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

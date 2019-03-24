@@ -1,0 +1,36 @@
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Module.deps.json
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Module.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Module.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Interface.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Model.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Repository.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Utility.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Model.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Repository.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Utility.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Interface.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.csprojAssemblyReference.cache
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.csproj.CoreCompileInputs.cache
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.AssemblyInfoInputs.cache
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.AssemblyInfo.cs
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.csproj.CopyComplete
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.pdb
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Module.deps.json
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Module.dll
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Module.pdb
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Interface.dll
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Model.dll
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Repository.dll
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Utility.dll
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Model.pdb
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Repository.pdb
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Utility.pdb
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\bin\Debug\netcoreapp2.1\IceFactory.Interface.pdb
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.csprojAssemblyReference.cache
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.csproj.CoreCompileInputs.cache
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.AssemblyInfoInputs.cache
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.AssemblyInfo.cs
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.csproj.CopyComplete
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.dll
+C:\Users\kanokwan.rod\IceFactory\IceFactory.Module\obj\Debug\netcoreapp2.1\IceFactory.Module.pdb

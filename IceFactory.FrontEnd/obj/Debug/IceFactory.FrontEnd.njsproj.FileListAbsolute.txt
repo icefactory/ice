@@ -1,0 +1,3 @@
+C:\Users\kanokwan.rod\IceFactory\IceFactory.FrontEnd\obj\Debug\IceFactory.FrontEnd.njsprojAssemblyReference.cache
+C:\Users\kanokwan.rod\IceFactory\IceFactory.FrontEnd\obj\Debug\IceFactory.FrontEnd.njsproj.CoreCompileInputs.cache
+C:\Users\kanokwan.rod\IceFactory\IceFactory.FrontEnd\bin\Microsoft.NodejsTools.WebRole.dll

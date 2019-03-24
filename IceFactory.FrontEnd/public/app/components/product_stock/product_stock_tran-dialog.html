@@ -1,0 +1,42 @@
+<!--<div class="modal-dialog">
+    <div class="modal-content">-->
+<div class="modal-body">
+    <div class="body scroll-active">
+        <div class="row">
+            <div class="col-xs-8 col-sm-11">
+                <div class="form-group ">
+                    <label class="col-md-2 control-label no-padding-right text-right bigger-110" for="txtdate">วันที่บันทึก
+                        :</label>
+
+                    <div class="col-md-1"></div>
+                    <div class="input-group col-md-9">
+                        <span class="input-group-addon"><i class="fa fa-calendar bigger-110"></i></span>
+                        <input class="form-control date-picker" id="txtdate" type="text"
+                               data-date-format="dd/mm/yyyy" ng-model="today">
+
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-sm btn-primary" ng-click="btnSearch()">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+
+                <table id="tbData" class="table table-striped table-bordered" style="width:100%">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-footer">
+    <button data-dismiss="modal" ng-click="btnCancelClicked();" aria-hidden="true" type="button"
+            class="btn btn-danger">ยกเลิก
+    </button>
+</div>
+<!--   </div>
+</div>-->
+

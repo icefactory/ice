@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "IceFactory.FrontEnd", "IceFactory.FrontEnd\IceFactory.FrontEnd.njsproj", "{BFFA21EA-DD91-4161-B624-6585CC52C5E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceFactory.Module", "IceFactory.Module\IceFactory.Module.csproj", "{CEA65DE2-46FE-46D3-8277-A10704CD8A1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceFactory.Api", "IceFactory.Api\IceFactory.Api.csproj", "{AF792C5D-1825-41FA-8CB4-EE1846A24125}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8C4E2A87-D609-42A8-9BD4-905082E2B084} = {8C4E2A87-D609-42A8-9BD4-905082E2B084}
+		{C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5} = {C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5}
+		{47749CAB-8C61-4654-A068-E777DCE518F4} = {47749CAB-8C61-4654-A068-E777DCE518F4}
+		{CEA65DE2-46FE-46D3-8277-A10704CD8A1F} = {CEA65DE2-46FE-46D3-8277-A10704CD8A1F}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceFactory.Model", "IceFactory.Model\IceFactory.Model.csproj", "{47749CAB-8C61-4654-A068-E777DCE518F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceFactory.Repository", "IceFactory.Repository\IceFactory.Repository.csproj", "{8C4E2A87-D609-42A8-9BD4-905082E2B084}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5} = {C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceFactory.Interface", "IceFactory.Interface\IceFactory.Interface.csproj", "{F4D02569-B747-4376-A474-E4F7CF2B156D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceFactory.Utility", "IceFactory.Utility\IceFactory.Utility.csproj", "{C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceFactory.Report.Api", "IceFactory.Report.Api\IceFactory.Report.Api.csproj", "{761ED2F4-62F2-4F8F-B5FD-487A2DB7AB2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFFA21EA-DD91-4161-B624-6585CC52C5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFA21EA-DD91-4161-B624-6585CC52C5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFA21EA-DD91-4161-B624-6585CC52C5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFA21EA-DD91-4161-B624-6585CC52C5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA65DE2-46FE-46D3-8277-A10704CD8A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA65DE2-46FE-46D3-8277-A10704CD8A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA65DE2-46FE-46D3-8277-A10704CD8A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA65DE2-46FE-46D3-8277-A10704CD8A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF792C5D-1825-41FA-8CB4-EE1846A24125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF792C5D-1825-41FA-8CB4-EE1846A24125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF792C5D-1825-41FA-8CB4-EE1846A24125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF792C5D-1825-41FA-8CB4-EE1846A24125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47749CAB-8C61-4654-A068-E777DCE518F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47749CAB-8C61-4654-A068-E777DCE518F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47749CAB-8C61-4654-A068-E777DCE518F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47749CAB-8C61-4654-A068-E777DCE518F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4E2A87-D609-42A8-9BD4-905082E2B084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4E2A87-D609-42A8-9BD4-905082E2B084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4E2A87-D609-42A8-9BD4-905082E2B084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4E2A87-D609-42A8-9BD4-905082E2B084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D02569-B747-4376-A474-E4F7CF2B156D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D02569-B747-4376-A474-E4F7CF2B156D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D02569-B747-4376-A474-E4F7CF2B156D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D02569-B747-4376-A474-E4F7CF2B156D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CF59A4-47A9-4A52-A526-83DD7A9CC4B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761ED2F4-62F2-4F8F-B5FD-487A2DB7AB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761ED2F4-62F2-4F8F-B5FD-487A2DB7AB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761ED2F4-62F2-4F8F-B5FD-487A2DB7AB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761ED2F4-62F2-4F8F-B5FD-487A2DB7AB2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A6CE754-032B-49DE-BFCC-1F20E9F2E15A}
+	EndGlobalSection
+EndGlobal

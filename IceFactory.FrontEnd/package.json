@@ -1,0 +1,13 @@
+{
+  "name": "ice-factory.front-end",
+  "version": "0.0.0",
+  "description": "IceFactory.FrontEnd",
+  "main": "app.js",
+  "author": {
+    "name": "kanokwan.rod"
+  },
+  "dependencies": {
+    "hapi": "^17.8.1",
+    "inert": "^5.1.2"
+  }
+}

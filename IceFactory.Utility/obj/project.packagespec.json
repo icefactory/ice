@@ -1,0 +1,67 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Utility\\IceFactory.Utility.csproj",
+    "projectName": "IceFactory.Utility",
+    "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Utility\\IceFactory.Utility.csproj",
+    "outputPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Utility\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "DotNetCross.Memory.Unsafe": {
+          "target": "Package",
+          "version": "[0.3.0, )"
+        },
+        "Microsoft.AspNetCore": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.AspNetCore.Session": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.IdentityModel.Tokens": {
+          "target": "Package",
+          "version": "[5.4.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "System.Data.Common": {
+          "target": "Package",
+          "version": "[4.3.0, )"
+        },
+        "System.Drawing.Common": {
+          "target": "Package",
+          "version": "[4.5.1, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

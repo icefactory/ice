@@ -1,0 +1,79 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                    style="margin-top: -10px;">×
+            </button>
+            <div class="body scroll-active">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="lblEditproduct_id">
+                                    รหัสสินค้า
+                                    : </label>
+
+                                <div class="col-sm-9">
+                                    <input type="text" id="lblEditproduct_id" placeholder="รหัสสินค้า"
+                                           class="form-control" value="9999" disabled ng-model="data.product_id">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="lblEditproduct_name">
+                                    ชื่อสินค้า
+                                    : </label>
+
+                                <div class="col-sm-9">
+                                    <input type="text" id="lblEditproduct_name" placeholder="ชื่อสินค้า"
+                                           class="form-control" ng-model="data.product_name">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="lblEditproduct_price">
+                                    ราคาหน้าโรง
+                                    : </label>
+
+                                <div class="col-sm-9">
+                                    <input type="text" id="lblEditproduct_price" placeholder="ราคาหน้าโรง"
+                                           class="form-control  text-right" ng-model="data.price_in">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right"
+                                       for="lblEditproduct_price_delivery">
+                                    ราคาจัดส่ง
+                                    : </label>
+
+                                <div class="col-sm-9">
+                                    <input type="text" id="lblEditproduct_price_delivery" placeholder="ราคาจัดส่ง"
+                                           class="form-control text-right" ng-model="data.price_out">
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right" for="form-field-select-1">หน่วย
+                                    :</label>
+
+                                <div class="col-sm-9">
+                                    <select ng-model="data.unit_id" ng-options="a.id as a.name for a in dataType">
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button data-dismiss="modal" ng-click="btnCancelClicked();" aria-hidden="true" type="button"
+                    class="btn btn-danger">ยกเลิก
+            </button>
+            <button data-dismiss="modal" ng-click="btnSaveClicked();" aria-hidden="true" type="button"
+                    class="btn btn-success">บันทึกข้อมูล
+            </button>
+        </div>
+    </div>
+</div>
+

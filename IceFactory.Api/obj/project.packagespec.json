@@ -1,0 +1,83 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Api\\IceFactory.Api.csproj",
+    "projectName": "IceFactory.Api",
+    "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Api\\IceFactory.Api.csproj",
+    "outputPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Api\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Interface\\IceFactory.Interface.csproj": {
+            "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Interface\\IceFactory.Interface.csproj"
+          },
+          "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Model\\IceFactory.Model.csproj": {
+            "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Model\\IceFactory.Model.csproj"
+          },
+          "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Module\\IceFactory.Module.csproj": {
+            "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Module\\IceFactory.Module.csproj"
+          },
+          "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Repository\\IceFactory.Repository.csproj": {
+            "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Repository\\IceFactory.Repository.csproj"
+          },
+          "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Utility\\IceFactory.Utility.csproj": {
+            "projectPath": "C:\\Users\\kanokwan.rod\\IceFactory\\IceFactory.Utility\\IceFactory.Utility.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Magick.NET-Q16-AnyCPU": {
+          "target": "Package",
+          "version": "[7.9.0, )"
+        },
+        "Microsoft.AspNetCore.All": {
+          "target": "Package",
+          "version": "[2.1.3, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.2.2, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[2.1.2, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[2.2.2, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "target": "Package",
+          "version": "[2.1.3, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

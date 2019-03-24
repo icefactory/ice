@@ -1,0 +1,48 @@
+<style type="text/css">
+    th {
+        font-size: large;
+        text-align: center;
+    }
+
+    tbody > tr {
+        font-size: x-large;
+    }
+</style>
+
+<div class="col-xs-12">
+    <h3 class="smaller lighter blue"> {{currentPage.title}} </h3>
+</div>
+
+<div class="col-xs-12" style="margin-bottom: 10px;">
+    <!--<div class="block pull-left">
+        <div style="width:400px">
+            <div class="input-group" aria-label="Search for user">
+                <input type="text" name="txtSearch" class="form-control"
+                       placeholder="ค้นหา"
+                       ng-keyup="txtSearchKeyUp()"
+                       ng-model="search.all" />
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-sm btn-primary" ng-click="btnSearchClicked()">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>-->
+    <div class="block pull-right">
+        <button class="btn btn-white btn-info btn-bold" ng-click="btnAddClicked();">
+            <i class="ace-icon glyphicon glyphicon-plus"></i>
+            เพิ่มข้อมูล
+        </button>
+    </div>
+</div>
+<div class="col-xs-12">
+    <!--<button class="btn btn-white btn-info btn-bold" ng-click="showProduct();">
+        <i class="ace-icon glyphicon glyphicon-plus"></i>
+        เพิ่มข้อมูล
+    </button>-->
+    <!--  table table-striped table-bordered dt-responsive nowrap-->
+    <table id="tbData" class="table table-striped table-bordered table-responsive" style="width:100%">
+    </table>
+</div>
