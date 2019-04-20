@@ -66,27 +66,91 @@
         <!-- /.col -->
     </div>
     <div class="row">
-        <div class="col-xs-12">
-            <!-- PAGE CONTENT BEGINS -->
+        <!-- PAGE CONTENT BEGINS -->
+        <div class="col-xs-12 col-sm-8 col-md-8 no-margin no-padding">
+            <div class="widget-box widget-color-blue3" id="widget-box-10">
+                <div class="widget-header widget-header-small">
+                    <h5 class="widget-title smaller">เลือกสินค้า</h5>
 
-            <div class="col-xs-12 col-sm-4">
+                    <div class="widget-toolbar no-border">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="active">
+                                <a data-toggle="tab" href="/requisition#home">ข้อมูลสินค้า</a>
+                            </li>
 
-                <table id="tdData" class="table table-striped table-bordered table-hover">
-                    <thead class="thin-border-bottom center">
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
+                            <li>
+                                <a data-toggle="tab" href="/requisition#profile">ข้อมูลบรรจุภัณฑ์</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="widget-body">
+                    <div class="widget-main padding-6">
+                        <div class="tab-content" style="height: 700px;">
+                            <div class="tab-pane in active" id="home">
+                                <div style="height: inherit">
+                                    <ul class="ace-thumbnails clearfix pull-left" id="boxPickProduct">
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="profile">
+                                <div style="min-height: inherit">
+                                    <ul class="ace-thumbnails clearfix pull-left" id="boxPickPackage">
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-8">
-                <div>
-                    <ul id="boxPickProduct" class="ace-thumbnails clearfix pull-left">
-                    </ul>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 ">
+            <div class="widget-box widget-color-pink no-padding" id="boxItem">
+                <div class="widget-header widget-header-small">
+                    <h5 class="widget-title smaller">รายการเบิกสินค้า</h5>
+                    <div class="widget-toolbar">
+														<span class="label label-warning">
+															<span class="bigger-140" id="productCount">0</span>
+															<i class="ace-icon fa fa-arrow-down"></i>
+														</span>
+                    </div>
+                </div>
+                <div class="widget-body">
+                    <div class="widget-main no-padding-top">
+                        <div class="tab-content no-padding" style="min-height: 540px">
+                            <table class="table table-striped table-bordered table-hover" id="tbProduct">
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- PAGE CONTENT ENDS -->
+            <div class="widget-box widget-color-pink no-padding" id="boxPackage">
+                <div class="widget-header widget-header-small">
+                    <h5 class="widget-title smaller">รายการเบิกบรรจุภัณฑ์</h5>
+                    <div class="widget-toolbar">
+														<span class="label label-warning">
+															<span class="bigger-140" id="packageCount">0</span>
+															<i class="ace-icon fa fa-arrow-down"></i>
+														</span>
+                    </div>
+                </div>
+
+                <div class="widget-body">
+                    <div class="widget-main no-padding-top">
+                        <div class="tab-content no-padding" style="min-height: 100px">
+                            <table class="table table-striped table-bordered table-hover" id="tbPackage">
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- PAGE CONTENT ENDS -->
 </div>

@@ -1,7 +1,7 @@
 "use strict";
 
 IceFactory.factory("return_requisitionService", function ($http, $q, $rootScope, handlerService) {
-    let uri = $rootScope.settings.apiUrl + "admin/return_requisition";
+    let uri = $rootScope.settings.apiUrl + "admin/returnrequisition";
 
 
     //--------------------------------------------------------------------------------
@@ -42,8 +42,9 @@ IceFactory.factory("return_requisitionService", function ($http, $q, $rootScope,
         return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
     }
 
-    function initReqByRoute(id) {
-        let request = $http.get(uri + "/initReqByRoute/" + id);
+    function initReturnReqByRoute(objFilter) {
+        console.log(objFilter);
+        let request = $http.post(uri + "/initReturnRequisition", objFilter);
         return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
     }
 
@@ -112,7 +113,7 @@ IceFactory.factory("return_requisitionService", function ($http, $q, $rootScope,
     return ({
         model: model,
         get: get,
-        initReqByRoute: initReqByRoute,
+        initReturnReqByRoute: initReturnReqByRoute,
         saveData: saveData,
         update: update,
         deleted: deleted,

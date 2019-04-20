@@ -1,105 +1,18 @@
 <div class="col-xs-12">
     <h3 class="smaller lighter blue"> {{currentPage.title}} </h3>
 
-
-    <div class="row" style="display: none">
-        <div class="col-xs-12 col-sm-6 col-md-5 hidden-xs hidden-sm">
-            <div class="profile-user-info profile-user-info-striped">
-                <div class="profile-info-row">
-                    <div class="profile-info-name">สายรถ</div>
-                    <div class="input-group">
-                        <!--<span id="route_name" class="form-control">{{reqData.route_name}}</span>-->
-                        <input type="text" name="txtSearch" class="form-control" readonly
-                               ng-model="newData.route_name"/>
-
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-sm btn-primary" ng-click="showDlgRoute()">
-                                <i class="glyphicon glyphicon-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div>
-
-                    </div>
-                    <div class="profile-info-name">พนักงาน</div>
-
-                    <div class="profile-info-value">
-                        <span>{{newData.transporter1_name}}</span>
-                        <span>{{newData.transporter2_name}}</span>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4  hidden-xs hidden-sm">
-            <div class="profile-user-info profile-user-info-striped">
-                <div class="profile-info-row">
-
-                    <div class="profile-info-name">วันที่</div>
-
-                    <div class="profile-info-value">
-                        <span>{{document_date}}</span>
-                    </div>
-                    <div class="profile-info-name">รอบที่</div>
-
-                    <div class="profile-info-value">
-                        <span>{{reqData.round}}</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 center">
-            <div id="btnGrp" class="btn-group btn-sm btn-corner">
-                            <span class="btn btn-pink" ng-click="pageClear();">
-                                <i class="ace-icon fa fa-refresh bigger-150"></i>
-                                        ล้างข้อมูล
-                            </span>
-
-                            <span class="btn btn-primary" ng-click="saveData();">
-                                <i class="ace-icon fa fa-save bigger-150"></i>
-                                         บันทึกข้อมูล
-                            </span>
-            </div>
-        </div>
-        <!-- /.col -->
-    </div>
-    <div class="row" style="display: none">>
-        <div class="col-xs-12">
-            <!-- PAGE CONTENT BEGINS -->
-
-            <div class="col-xs-12 col-sm-4">
-
-                <table id="tdData" class="table table-striped table-bordered table-hover">
-                    <thead class="thin-border-bottom center">
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-
-            </div>
-            <div class="col-xs-12 col-sm-8">
-                <div>
-
-                </div>
-            </div>
-
-            <!-- PAGE CONTENT ENDS -->
-        </div>
-    </div>
     <div class="row">
 
-        <div class="col-xs-12 col-sm-12 col-md-8">
-            <div class="row no-padding no-margin">
-                <div class="col-sm-2">
+        <div class="col-xs-12 col-sm-12 col-md-8  no-padding">
+            <div class="row no-margin no-padding">
+                <!--<div class="col-sm-2">
                     <label class="inline">
                         <small class="muted smaller-90">ไปส่ง:</small>
                         <input type="checkbox"
                                class="ace ace-switch ace-switch-5">
                         <span class="lbl middle"></span>
                     </label>
-                </div>
+                </div>-->
                 <div class="col-sm-5">
                     <div class="input-group">
 																	<span class="input-group-addon">
@@ -110,7 +23,8 @@
                         <input type="text" class="form-control search-query" ng-model="customerInfo.customer_fullname"
                                placeholder="ชื่อลูกค้า" readonly>
                                                             <span class="input-group-btn">
-																		<button type="button" ng-click="showDlgCustomer()"
+																		<button ng-click="showDlgCustomer()"
+                                                                                type="button"
                                                                                 class="btn btn-yellow btn-sm">
                                                                             <span class="ace-icon fa fa-search icon-on-right bigger-110"></span>
                                                                         </button>
@@ -118,14 +32,14 @@
                     </div>
                 </div>
                 <div class="col-sm-5">
-                    <div class="input-group">
+                    <div class="input-group invisible">
 																	<span class="input-group-addon">
 																		สายรถ
                                                                         <i class="ace-icon fa fa-truck blue bigger-110"></i>
 																	</span>
 
                         <input type="text" class="form-control search-query"
-                               placeholder="สายรถ" readonly  ng-model="newData.route_name">
+                               ng-model="newData.route_name" placeholder="สายรถ" readonly>
                                                             <span class="input-group-btn">
 																		<button type="button" ng-click="showDlgRoute()"
                                                                                 class="btn btn-primary btn-sm">
@@ -136,74 +50,142 @@
                 </div>
             </div>
 
-            <div style="border-top: 10px double #E5E5E5;">
-                <ul id="boxPickProduct" class="ace-thumbnails clearfix pull-left" style="margin-top: 10px;">
-                </ul>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="col-xs-12 no-margin">
+                <div class="widget-box widget-color-blue3 no-margin" id="widget-box-10">
+                    <div class="widget-header widget-header-small">
+                        <h5 class="widget-title smaller">เลือกสินค้า</h5>
 
-            <div class="row well search-area">
-                <table id="cart-details"
-                       style="width: 100%; padding: 5px;vertical-align: top; font-size: larger;">
-                    <!--<tfoot class="hidden-xs hidden-sm hidden-md">-->
-                    <tr class="active">
-                        <td width="120" class="text-left"> รายการรวม ( <span
-                                class="items-number" id="infoItemCount">{{slipInfo.item_count}}</span> )
-                        </td>
-                        <td class="text-right hidden-xs"></td>
-                        <td class="text-right align-top">ราคารวม</td>
-                        <td width="90" style="padding-right: 5px;"
-                            class="text-right  align-top blue">
-                            <span id="infoPriceAmt">{{slipInfo.price_amt}}</span>
-                        </td>
-                        <td width="150" style="border-left: solid #7DB4D8 2px;"
-                            class="text-center">
-                            <span>ราคาสุทธิ</span>
-                        </td>
-                    </tr>
-                    <tr class="active">
-                        <td>
-                        </td>
-                        <td></td>
-                        <td class="text-right align-top">หักส่วนลด</td>
-                        <td style="padding-right: 5px;"
-                            class="text-right align-top red">
-                            <span id="infoDiscount">{{slipInfo.discount_amt}} </span></td>
-                        <td style="height: 40px;border-left: solid #7DB4D8 2px;"
-                            class="text-center green"><h1><b id="infoTotalNet">{{slipInfo.total_net}}</b></h1>
-                        </td>
-                    </tr>
-                    </tfoot>
-                </table>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 center no-padding">
-                    <div class="btn-group btn-sm btn-corner">
-                        <button class="btn btn-success" ng-click="saveData();">
-                            <i class="ace-icon fa fa-money bigger-140"></i>
-                            ชำระเงิน
-                        </button>
-                        <button class="btn btn-danger" ng-click="editDiscount();">
-                            <i class="ace-icon fa fa-cart-arrow-down bigger-140"></i>
-                            ส่วนลด
-                        </button>
-                        <button class="btn btn-pink" ng-click="pageClear();">
-                            <i class="ace-icon fa fa-refresh bigger-140"></i>
-                            ล้างข้อมูล
-                        </button>
+                        <div class="widget-toolbar no-border">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li class="active">
+                                    <a data-toggle="tab" href="/requisition#home">ข้อมูลสินค้า</a>
+                                </li>
+
+                                <li>
+                                    <a data-toggle="tab" href="/requisition#profile">ข้อมูลบรรจุภัณฑ์</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="widget-body">
+                        <div class="widget-main padding-6">
+                            <div class="tab-content" style="height: 700px;">
+                                <div class="tab-pane in active" id="home">
+                                    <div style="height: inherit">
+                                        <ul class="ace-thumbnails clearfix pull-left" id="boxPickProduct">
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="profile">
+                                    <div style="min-height: inherit">
+                                        <ul class="ace-thumbnails clearfix pull-left" id="boxPickPackage">
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="hr hr2 hr-double"></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 ">
+            <div class="widget-box widget-color-green no-padding" id="boxSlipInfo">
+                <div class="widget-body">
+                    <div class="widget-main no-padding-top">
+                        <div class="tab-content no-padding" style="min-height: 600px">
+                            <div>
+                                <div class="row well search-area no-margin-bottom">
+                                    <table id="cart-details"
+                                           style="width: 100%; padding: 5px;vertical-align: top; font-size: larger;">
+                                        <tr class="active">
+                                            <td class="text-left" width="120"> รายการรวม ( <span
+                                                    class="items-number"
+                                                    id="infoItemCount">{{slipInfo.item_count}}</span> )
+                                            </td>
+                                            <td class="text-right hidden-xs"></td>
+                                            <td class="text-right align-top">ราคารวม</td>
+                                            <td class="text-right  align-top blue" style="padding-right: 5px;"
+                                                width="90">
+                                                <span id="infoPriceAmt">{{slipInfo.price_amt}}</span>
+                                            </td>
+                                            <td class="text-center" style="border-left: solid #7DB4D8 2px;"
+                                                width="150">
+                                                <span>ราคาสุทธิ</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="active">
+                                            <td>
+                                            </td>
+                                            <td></td>
+                                            <td class="text-right align-top">หักส่วนลด</td>
+                                            <td class="text-right align-top red"
+                                                style="padding-right: 5px;">
+                                                <span id="infoDiscount">{{slipInfo.discount_amt}} </span></td>
+                                            <td class="text-center green"
+                                                style="height: 40px;border-left: solid #7DB4D8 2px;"><h1><b id="infoTotalNet">{{slipInfo.total_net}}</b>
+                                            </h1>
+                                            </td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 center no-padding">
+                                        <div class="btn-group btn-sm btn-corner">
+                                            <button class="btn btn-success" ng-click="saveData();">
+                                                <i class="ace-icon fa fa-money bigger-140"></i>
+                                                ชำระเงิน
+                                            </button>
+                                            <button class="btn btn-danger" ng-click="editDiscount();">
+                                                <i class="ace-icon fa fa-cart-arrow-down bigger-140"></i>
+                                                ส่วนลด
+                                            </button>
+                                            <button class="btn btn-pink" ng-click="pageClear();">
+                                                <i class="ace-icon fa fa-refresh bigger-140"></i>
+                                                ล้างข้อมูล
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="hr hr2 hr-double"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 center no-padding-left">
+                                        <table class="table table-striped table-hover table-responsive" id="tbPickData">
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <table id="tbPickData" class="table table-striped table-hover table-responsive">
 
-                </table>
+            <div class="widget-box widget-color-green no-padding" id="boxPackage">
+                <div class="widget-header widget-header-small">
+                    <h5 class="widget-title smaller">รายการเบิกบรรจุภัณฑ์</h5>
+                    <div class="widget-toolbar">
+														<span class="label label-warning">
+															<span class="bigger-140" id="packageCount">0</span>
+															<i class="ace-icon fa fa-arrow-down"></i>
+														</span>
+                    </div>
+                </div>
+
+                <div class="widget-body">
+                    <div class="widget-main no-padding-top">
+                        <div class="tab-content no-padding" style="min-height: 100px">
+                            <table class="table table-striped table-hover table-responsive" id="tbPackage">
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>
 </div>

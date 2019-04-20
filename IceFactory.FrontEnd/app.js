@@ -5,7 +5,7 @@ const Hapi = require('hapi');
 // Create a server with a host and port
 const server = new Hapi.Server({
     host: 'localhost',
-    port: '3001',
+    port: '3000',
     routes: {cors: true}
 });
 
@@ -25,7 +25,7 @@ const init = async () => {
     });
 
     await server.start();
-    console.log(`Server running at: ${server.info.uri}`);
+    console.log('Server running at: ${server.info.uri}');
 };
 
 process.on('unhandledRejection', (err) => {

@@ -1,14 +1,9 @@
-﻿using IceFactory.Model;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace IceFactory.Repository.Infrastructure
 {
     public class IceFactoryContext : DbContext
     {
-
         #region " Constructors "
 
         /// <inheritdoc />
@@ -18,6 +13,15 @@ namespace IceFactory.Repository.Infrastructure
         /// <param name="options">Options.</param>
         public IceFactoryContext(DbContextOptions options) : base(options)
         {
+        }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Model.Master.PriceAgencyModel>().HasKey(table => new
+            {
+                table.customer_id,
+                table.product_id
+            });
         }
 
         #endregion
@@ -39,11 +43,17 @@ namespace IceFactory.Repository.Infrastructure
         public DbSet<Model.Master.CustomerModel> customer { get; set; }
         public DbSet<Model.IceBucket.IceBucketModel> ice_bucket { get; set; }
         public DbSet<Model.Master.UserModel> users { get; set; }
+        public DbSet<Model.Master.PriceAgencyModel> price_agency { get; set; }
 
 
         public DbSet<Model.Requisition.RequisitionModel> Requisition { get; set; }
         public DbSet<Model.Requisition.RequisitionProductModel> requisition_product { get; set; }
         public DbSet<Model.Requisition.RequisitionPackageModel> requisition_package { get; set; }
+
+        public DbSet<Model.ReturnRequisition.ReturnRequisitionProductModel> return_product { get; set; }
+        public DbSet<Model.ReturnRequisition.ReturnRequisitionModel> return_requisition { get; set; }
+        public DbSet<Model.ReturnRequisition.ReturnRequisitionItemModel> return_requisition_item { get; set; }
+        public DbSet<Model.ReturnRequisition.ReturnRequisitionPackageModel> return_requisition_package { get; set; }
 
         // View
         public DbQuery<Model.Master.vwProductModel> vwproduct { get; set; }
@@ -51,6 +61,7 @@ namespace IceFactory.Repository.Infrastructure
         public DbQuery<Model.Master.vwCustomerModel> vwCustomer { get; set; }
         public DbQuery<Model.IceBucket.vwIceBucketModel> vwIceBucket { get; set; }
         public DbQuery<Model.Master.vwUserModel> vwUsers { get; set; }
+        public DbQuery<Model.Master.User> user { get; set; }
 
         public DbSet<Model.ProductStock.ProductStockModel> product_stock_transaction { get; set; }
 
@@ -59,8 +70,24 @@ namespace IceFactory.Repository.Infrastructure
         public DbQuery<Model.Requisition.vwRequisitionProductModel> vwRequisition_product { get; set; }
         public DbQuery<Model.Requisition.vwRequisitionPackageModel> vwRequisition_package { get; set; }
 
+        public DbQuery<Model.ReturnRequisition.vwReturnRequisitionProductModel> vwReturn_product { get; set; }
+        public DbQuery<Model.ReturnRequisition.vwReturnRequisitionModel> vwReturn_requisition { get; set; }
+        public DbQuery<Model.ReturnRequisition.vwReturnRequisitionItemModel> vwReturn_requisition_item { get; set; }
+
+        public DbQuery<Model.ReturnRequisition.vwReturnRequisitionPackageModel> vwReturn_requisition_package
+        {
+            get;
+            set;
+        }
+
+        public DbQuery<Model.ReturnRequisition.ReturnRequisitionItemPrepare> vwReturn_requisition_item_prepare
+        {
+            get;
+            set;
+        }
+
+        public DbQuery<Model.Master.vwPriceAgencyModel> vwPriceAgency { get; set; }
 
         #endregion
-
     }
 }

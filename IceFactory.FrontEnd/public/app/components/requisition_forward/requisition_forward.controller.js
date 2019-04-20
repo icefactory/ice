@@ -13,12 +13,15 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
     //
     //
     //------------------------------------------------------------------------------------------------
+    var lstProduct = [];
+    var lstPackage = [];
+
     var dt = new Date();
     $scope.reqData = {
         requisition_id: null,
-        route_id: 4,
+        route_id: 3,
         route_name: "",
-        round: 3,
+        round: 1,
         transporter1_name: "",
         transporter2_name: "",
         document_date: String(dt.getDate()).padStart(2, '0') + "/" + String((dt.getMonth() + 1)).padStart(2, '0') + "/" + dt.getFullYear(),
@@ -61,8 +64,14 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
     $scope.dataSelect = {};
 
     var colDefine = [
-        {"title": "รหัสสินค้า", "className": "text-center", "data": "product_id", "width": "80px"},
-        {"title": "ซื้อสินค้า", "className": "text-left", "data": "product_name", "width": "280px"},
+        {"title": "รหัสสินค้า", "className": "text-center", "data": "product_id", "width": "80px", bVisible: false},
+        //{"title": "ซื้อสินค้า", "className": "text-left", "data": "product_name", "width": "280px"},
+        {
+            "title": "ซื้อสินค้า", "className": "text-left",// "data": "product_name",
+            mRender: function (data, type, row, meta) {
+                return '<div style="">' + row.product_name + '<span class=" pull-right">' + ((row.package_name == null) ? "" : row.package_name) + '</span></div>';
+            }
+        },
         //{"title": "quantity", "className": "text-center", "data": "quantity" ,"width": "50px"},
         //{"title": "price", "className": "text-center", "data": "price" ,"width": "50px"},
         {
@@ -78,7 +87,7 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
         },
     ];
 
-    var table = $('#tdData').DataTable({
+    var table = $('#tbData').DataTable({
         "paging": false,
         "destroy": true,
         "searching": false,
@@ -88,7 +97,9 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
         "columns": colDefine,
         //"autoWidth": true,
         "data": [],
-        "order": [[0, 'asc']]
+        "order": [[0, 'asc']],
+        "bLength": false,
+        "bInfo": false,
     });
 
     $('#tbData tbody').on('click', 'tr', function () {
@@ -100,8 +111,8 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
             $(this).addClass('selected');
         }
     });
-    $('#tdData tbody').on('click', '#btnEdit', function () {
-        var table = $('#tdData').DataTable();
+    $('#tbData tbody').on('click', '#btnEdit', function () {
+        var table = $('#tbData').DataTable();
         var data = table.row($(this).parents('tr')).data();
         var idx = table.row($(this).parents('tr')).index();
         //console.log(data);
@@ -110,8 +121,8 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
     });
 
 
-    $('#tdData tbody').on('click', '#btnPlus', function () {
-        var table = $('#tdData').DataTable();
+    $('#tbData tbody').on('click', '#btnPlus', function () {
+        var table = $('#tbData').DataTable();
         var data = table.row($(this).parents('tr')).data();
         var idx = table.row($(this).parents('tr')).index();
         //console.log(data);
@@ -120,20 +131,20 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
 
         data.quantity = data.req_forward_qty;
 
-        $('#tdData').DataTable().row(idx).data(data).draw();
+        $('#tbData').DataTable().row(idx).data(data).draw();
         //}
     });
 
 
-    $('#tdData tbody').on('click', '#btnSubtract', function () {
-        var table = $('#tdData').DataTable();
+    $('#tbData tbody').on('click', '#btnSubtract', function () {
+        var table = $('#tbData').DataTable();
         var data = table.row($(this).parents('tr')).data();
         var idx = table.row($(this).parents('tr')).index();
         if (data.req_forward_qty > 0) {
             data.req_forward_qty -= 1;
             data.quantity = data.req_forward_qty;
 
-            $('#tdData').DataTable().row(idx).data(data).draw();
+            $('#tbData').DataTable().row(idx).data(data).draw();
         }
     });
     //------------------------------------------------------------------------------------------------
@@ -180,16 +191,29 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
 
             modalDialog.result.then(function (dialogResult) {
                 if (dialogResult != null) {
+
+                    var objProduct = _.head(_.filter(lstProduct, {'product_id': product_id}));
+                    var objPackage = _.head(_.filter(lstProduct, {'product_id': objProduct.item_id})); // get first element
                     var data = {
-                        product_id: product_id,
-                        product_name: product_name,
-                        quantity: parseInt(dialogResult),
-                        req_forward_qty: parseInt(dialogResult)
+                        id: 0,
+                        product_id: objProduct.product_id,
+                        product_name: objProduct.product_name,
+                        quantity: 0,
+                        req_forward_qty: parseInt(dialogResult),
+                        unit_name: objProduct.unit_name,
+                        package_name: (objPackage != null ? "(" + objPackage.product_name + ")" : "")
                     };
+
+                    //var data = {
+                    //    product_id: product_id,
+                    //    product_name: product_name,
+                    //    quantity: parseInt(dialogResult),
+                    //    req_forward_qty: parseInt(dialogResult)
+                    //};
                     if (data.req_forward_qty > 0) {
-                        var table = $('#tdData').DataTable();
-                        $('#tdData').dataTable().fnAddData(data);
-                        $('#tdData').dataTable().fnDraw();
+                        var table = $('#tbData').DataTable();
+                        $('#tbData').dataTable().fnAddData(data);
+                        $('#tbData').dataTable().fnDraw();
 
                         debugger;
                         $("#pickid_" + product_id).attr("style", "display:none;")
@@ -219,12 +243,12 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
                 // Refresh ข้อมูลใน Grid ใหม่
                 if (parseInt(dialogResult) > 0) {
 
-                    var table = $('#tdData').DataTable();
+                    var table = $('#tbData').DataTable();
                     var data = table.row(tbRowId).data();
                     //var idx = table.row(tbRowId).index();
                     data.quantity = parseInt(dialogResult);
                     data.req_forward_qty = parseInt(dialogResult);
-                    $('#tdData').DataTable().row(tbRowId).data(data).draw();
+                    $('#tbData').DataTable().row(tbRowId).data(data).draw();
                 }
             }
         });
@@ -252,8 +276,8 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
 
     $scope.pageClear = function () {
         //location.reload();
-        //$('#tdData').DataTable().clear();
-        //$('#tdData').DataTable().rows().draw();
+        //$('#tbData').DataTable().clear();
+        //$('#tbData').DataTable().rows().draw();
         loadDataReqProduct();
         //dialogService.messageDialog("title", "test message") ;
     }
@@ -261,7 +285,7 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
 
     $scope.saveData = function () {
 
-        var table = $('#tdData').DataTable();
+        var table = $('#tbData').DataTable();
         var data = table.rows().data().toArray();
         var postData = {
             _master: newData,
@@ -350,10 +374,10 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
             if (responseDet.result.length > 0) {
                 var dataProduct = responseDet.result;
                 //console.log(dataProduct);
-                var table = $('#tdData').DataTable();
-                $('#tdData').DataTable().clear().draw();
-                $('#tdData').dataTable().fnAddData(dataProduct);
-                $('#tdData').dataTable().fnDraw();
+                var table = $('#tbData').DataTable();
+                $('#tbData').DataTable().clear().draw();
+                $('#tbData').dataTable().fnAddData(dataProduct);
+                $('#tbData').dataTable().fnDraw();
 
 
                 dataProduct.forEach(function (objData) {
@@ -370,9 +394,13 @@ angular.module('IceFactory').controller("RequisitionForwardController", function
         var param = {};
         productService.search(param).then(function (result) {
             if (result) {
+                lstProduct = result;
+                var lstImgProduct = _.filter(lstProduct, {'product_type': 1});
+                var lstImgPackage = _.filter(lstProduct, {'product_type': 2});
+
                 //console.log(result);
-                result.forEach(function (data, index) {
-                    if (data.product_type == 1) {
+                lstImgProduct.forEach(function (data, index) {
+                    if (data.product_type == 1 && data.type_id != 0) {
 
                         var li = $('<li id="pickid_' + data.product_id + '"></li>');
                         var tagA = $('<a ng-click="showDlgNumpad(' + data.product_id + ',\'' + data.product_name + '\');" data-rel="colorbox" class="cboxElement"></a>');

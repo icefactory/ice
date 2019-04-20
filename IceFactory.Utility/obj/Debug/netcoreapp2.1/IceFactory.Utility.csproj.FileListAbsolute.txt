@@ -1,6 +1,7 @@
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Utility\bin\Debug\netcoreapp2.1\IceFactory.Utility.deps.json
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Utility\bin\Debug\netcoreapp2.1\IceFactory.Utility.dll
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Utility\bin\Debug\netcoreapp2.1\IceFactory.Utility.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Utility\obj\Debug\netcoreapp2.1\IceFactory.Utility.csprojAssemblyReference.cache
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Utility\obj\Debug\netcoreapp2.1\IceFactory.Utility.csproj.CoreCompileInputs.cache
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Utility\obj\Debug\netcoreapp2.1\IceFactory.Utility.AssemblyInfoInputs.cache
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Utility\obj\Debug\netcoreapp2.1\IceFactory.Utility.AssemblyInfo.cs

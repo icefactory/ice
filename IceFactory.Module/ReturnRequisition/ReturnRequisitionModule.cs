@@ -1,23 +1,17 @@
-﻿using IceFactory.Model.Master;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 using IceFactory.Model.ProductStock;
 using IceFactory.Model.ReturnRequisition;
 using IceFactory.Model.View;
 using IceFactory.Module.ProductStock;
-using IceFactory.Repository.Infrastructure;
 using IceFactory.Repository.UnitOfWork;
 using IceFactory.Utility.Http;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-
 
 namespace IceFactory.Module.ReturnRequisition
 {
@@ -36,11 +30,15 @@ namespace IceFactory.Module.ReturnRequisition
         /// <param name="orderBy"></param>
         /// <param name="includeProperties"></param>
         /// <returns></returns>
-        public IQueryable<VDropDownList> GetForDropDownList(Expression<Func<ReturnRequisitionModel, bool>> filter = null,
-            Func<IQueryable<ReturnRequisitionModel>, IOrderedQueryable<ReturnRequisitionModel>> orderBy = null, string includeProperties = "")
+        public IQueryable<VDropDownList> GetForDropDownList(
+            Expression<Func<ReturnRequisitionModel, bool>> filter = null,
+            Func<IQueryable<ReturnRequisitionModel>, IOrderedQueryable<ReturnRequisitionModel>> orderBy = null,
+            string includeProperties = "")
         {
-            return UnitOfWork.Context.Query<ReturnRequisitionModel>().Select(s => new VDropDownList() { Id = s.retrun_requisition_id, Code = s.customer_id.ToString(), Name = s.retrun_requisition_id.ToString() });
-
+            return UnitOfWork.Context.Query<ReturnRequisitionModel>().Select(s => new VDropDownList()
+            {
+                Id = s.retrun_requisition_id, Code = s.customer_id.ToString(), Name = s.retrun_requisition_id.ToString()
+            });
         }
 
         /// <summary>
@@ -63,10 +61,8 @@ namespace IceFactory.Module.ReturnRequisition
         /// <returns>The Product or null value</returns>
         public async Task<ReturnRequisitionModel> FindByIdAsync(Int32 id)
         {
-
             return await UnitOfWork.Context.Set<ReturnRequisitionModel>().Where(p => p.retrun_requisition_id == id)
                 .FirstOrDefaultAsync();
-
         }
 
         /// <summary>
@@ -74,33 +70,33 @@ namespace IceFactory.Module.ReturnRequisition
         /// </summary>
         /// <param name="blackList">The object of Product</param>
         /// <returns>The Product object</returns>
-        public async Task<ReturnRequisitionDataModel> SaveRequisitionData(ReturnRequisitionDataModel objData)
+        public async Task<ReturnRequisitionDataModel> SaveReturnRequisitionData(ReturnRequisitionDataModel objData)
         {
             try
             {
                 //ReturnRequisitionModel objMast = new ReturnRequisitionModel();
 
-                List<ProductModel> lstProRemain = new List<ProductModel>();
-                if (objData._master.description == "APR")
-                {
-                    foreach (var item in objData._lstProducts)
-                    {
-                        var objChk = UnitOfWork.Context.Set<ProductModel>().Where(w => w.product_id.Equals(item.product_id) && w.remain_amt < item.quantity).FirstOrDefault();
-                        if (objChk != null)
-                            lstProRemain.Add(objChk);
-                    }
+                //List<ProductModel> lstProRemain = new List<ProductModel>();
+                //if (objData._master.description == "APR")
+                //{
+                //    foreach (var item in objData._lstProducts)
+                //    {
+                //        var objChk = UnitOfWork.Context.Set<ProductModel>().Where(w => w.product_id.Equals(item.product_id) && w.remain_amt < item.quantity).FirstOrDefault();
+                //        if (objChk != null)
+                //            lstProRemain.Add(objChk);
+                //    }
 
-                    if (lstProRemain.Count > 0)
-                    {
-                        var lstMsg = lstProRemain.Select(s => string.Format("รายการสินค้า {0} ยอดคงเหลือ {1} น้อยกว่า ยอดเบิกจ่าย", s.product_name, s.remain_amt));
-                        throw new Exception(new ErrorInfo
-                        {
-                            Message = string.Join("\n", lstMsg),
-                            MessageLocal = string.Join("\n", lstMsg),
-                            Data = -1
-                        }.ConvertErrorInfoToException());
-                    }
-                }
+                //    if (lstProRemain.Count > 0)
+                //    {
+                //        var lstMsg = lstProRemain.Select(s => string.Format("รายการสินค้า {0} ยอดคงเหลือ {1} น้อยกว่า ยอดเบิกจ่าย", s.product_name, s.remain_amt));
+                //        throw new Exception(new ErrorInfo
+                //        {
+                //            Message = string.Join("\n", lstMsg),
+                //            MessageLocal = string.Join("\n", lstMsg),
+                //            Data = -1
+                //        }.ConvertErrorInfoToException());
+                //    }
+                //}
 
                 objData._master.ModifyDate = DateTime.Today;
                 objData._master.ModifyByUserId = 1;
@@ -117,14 +113,15 @@ namespace IceFactory.Module.ReturnRequisition
                 {
                     UnitOfWork.Context.Set<ReturnRequisitionModel>().Update(objData._master);
                 }
+
                 int i = UnitOfWork.Context.SaveChanges();
                 foreach (var item in objData._lstProducts)
                 {
                     item.ModifyDate = DateTime.Today;
                     item.ModifyByUserId = 1;
-                    if (item.id <= 0)
+                    if (item.return_product_id <= 0)
                     {
-                        item.requisition_id = objData._master.retrun_requisition_id;
+                        item.retrun_requisition_id = objData._master.retrun_requisition_id;
                         //item.document_no = objData._master.document_no;
                         item.status = "Y";
                         item.CreateDate = DateTime.Today;
@@ -138,21 +135,64 @@ namespace IceFactory.Module.ReturnRequisition
 
                     UnitOfWork.Context.SaveChanges();
 
-                    ProductStockModel objStock = new ProductStockModel();
-                    objStock.CreateByUserId = 1;
-                    objStock.CreateDate = DateTime.Today;
-                    objStock.ModifyByUserId = item.ModifyByUserId;
-                    objStock.ModifyDate = item.ModifyDate;
-                    objStock.product_id = item.product_id;
-                    objStock.relate_doc_id = item.requisition_id;
-                    objStock.item_amt = item.quantity;
-                    //objStock.from_action = objData._master./*requisition_type*/;
+                    if (item.return_quantity > 0)
+                    {
+                        ProductStockModel objStock = new ProductStockModel();
+                        objStock.CreateByUserId = 1;
+                        objStock.CreateDate = DateTime.Today;
+                        objStock.ModifyByUserId = item.ModifyByUserId;
+                        objStock.ModifyDate = item.ModifyDate;
+                        objStock.product_id = item.product_id;
+                        objStock.relate_doc_id = item.return_product_id;
+                        objStock.item_amt = item.return_quantity ?? 0;
+                        objStock.from_action = "RTN";
 
-                    ProductStockModule processStock = new ProductStockModule(UnitOfWork);
-                    await processStock.InsertAsync(objStock);
-
+                        ProductStockModule processStock = new ProductStockModule(UnitOfWork);
+                        await processStock.InsertAsync(objStock);
+                    }
                 }
 
+                foreach (var item in objData._lstPackages)
+                {
+                    //item.ModifyDate = DateTime.Today;
+                    //item.ModifyByUserId = 1;
+                    if (item.return_requisition_package_id <= 0)
+                    {
+                        item.retrun_requisition_id = objData._master.retrun_requisition_id;
+                        //item.document_no = objData._master.document_no;
+                        item.status = "Y";
+                        //item.CreateDate = DateTime.Today;
+                        //item.CreateByUserId = 1;
+                        UnitOfWork.Context.Set<ReturnRequisitionPackageModel>().Add(item);
+                    }
+                    else
+                    {
+                        UnitOfWork.Context.Set<ReturnRequisitionPackageModel>().Update(item);
+                    }
+
+                    UnitOfWork.Context.SaveChanges();
+                }
+
+                foreach (var item in objData._lstItems)
+                {
+                    //item.ModifyDate = DateTime.Today;
+                    //item.ModifyByUserId = 1;
+                    if (item.return_requisition_item_id <= 0)
+                    {
+                        item.retrun_requisition_id = objData._master.retrun_requisition_id;
+                        //item.document_no = objData._master.document_no;
+                        item.status = "Y";
+                        //item.CreateDate = DateTime.Today;
+                        //item.CreateByUserId = 1;
+                        UnitOfWork.Context.Set<ReturnRequisitionItemModel>().Add(item);
+                    }
+                    else
+                    {
+                        UnitOfWork.Context.Set<ReturnRequisitionItemModel>().Update(item);
+                    }
+
+                    UnitOfWork.Context.SaveChanges();
+                }
 
                 return objData;
             }
@@ -160,7 +200,6 @@ namespace IceFactory.Module.ReturnRequisition
             {
                 throw new Exception(ex.Message);
             }
-
         }
 
         /// <summary>
@@ -231,22 +270,21 @@ namespace IceFactory.Module.ReturnRequisition
 
             await SaveAsync();
         }
+
         public async Task<ReturnRequisitionDataModel> getAll(filterReturnRequisition objFilter)
         {
             try
             {
+                //string sql = string.Format("exec stk_trn_search {0} , '{1}' , {2} ", objFilter.retrun_requisition_id == null ? "null" : objFilter.retrun_requisition_id.ToString(), objFilter.product_name, objFilter.route_id == null ? "null" : objFilter.route_id.ToString());
 
-                string sql = string.Format("exec stk_trn_search {0} , '{1}' , {2} ", objFilter.requisition_id == null ? "null" : objFilter.requisition_id.ToString(), objFilter.product_name, objFilter.route_id == null ? "null" : objFilter.route_id.ToString());
-
-                int i = Convert.ToInt32(objFilter.requisition_id ?? 0);
+                //int i = Convert.ToInt32(objFilter.retrun_requisition_id ?? 0);
 
                 ReturnRequisitionDataModel objData = new ReturnRequisitionDataModel();
-                objData._master = UnitOfWork.Context.Set<ReturnRequisitionModel>().Where(w => w.retrun_requisition_id.Equals(i)).FirstOrDefault();
-                objData._lstProducts = UnitOfWork.Context.Set<ReturnRequisitionProductModel>().Where(w => w.id.Equals(i)).ToList();
-                objData._lstPackages = UnitOfWork.Context.Set<ReturnRequisitionPackageModel>().Where(w => w.id.Equals(i)).ToList();
+                //objData._master = UnitOfWork.Context.Set<ReturnRequisitionModel>().Where(w => w.retrun_requisition_id.Equals(i)).FirstOrDefault();
+                //objData._lstProducts = UnitOfWork.Context.Set<ReturnRequisitionProductModel>().Where(w => w.id.Equals(i)).ToList();
+                //objData._lstPackages = UnitOfWork.Context.Set<ReturnRequisitionPackageModel>().Where(w => w.id.Equals(i)).ToList();
 
                 return objData;
-
             }
             catch (Exception ex)
             {
@@ -254,31 +292,44 @@ namespace IceFactory.Module.ReturnRequisition
             }
             finally
             {
-
             }
         }
 
-        public async Task<IQueryable<vwReturnRequisitionModel>> searchRequisition(filterReturnRequisition objFilter)
+        public async Task<ReturnRequisitionDataModel> initReturnRequisitionByRouteID(filterReturnRequisition objFilter)
         {
             try
             {
-
-                string sql = string.Format("exec req_search {0} , {1} , '{2}' ,'{3}' ,'{4}','{5}' , {6} "
-                    , objFilter.requisition_id == null ? "null" : objFilter.requisition_id.ToString()
+                string sql = string.Format("exec return_req_initByRoute {0} , '{1}' "
                     , objFilter.route_id == null ? "null" : objFilter.route_id.ToString()
-                    , objFilter.route_name
-                    , objFilter.document_date == null ? "" : string.Format("{0:yyyy-MM-dd}", Convert.ToDateTime(objFilter.document_date))
-                    , objFilter.requisition_type
-                    , objFilter.status
-                    , objFilter.round == null ? "null" : objFilter.round.ToString()
-                    );
-
-
+                    , objFilter.document_date == null ? "" : string.Format("{0:yyyy-MM-dd}", objFilter.document_date)
+                );
 
                 ReturnRequisitionDataModel objData = new ReturnRequisitionDataModel();
-                return UnitOfWork.Context.Query<vwReturnRequisitionModel>().FromSql(sql);
+                objData._vwMaster = UnitOfWork.Context.Query<vwReturnRequisitionModel>().FromSql(sql).FirstOrDefault();
+
+                sql = string.Format("exec return_req_initByRoute_product {0} , '{1}' "
+                    , objFilter.route_id == null ? "null" : objFilter.route_id.ToString()
+                    , objFilter.document_date == null ? "" : string.Format("{0:yyyy-MM-dd}", objFilter.document_date)
+                );
+                objData._lstVwProducts =
+                    UnitOfWork.Context.Query<vwReturnRequisitionProductModel>().FromSql(sql).ToList();
+
+                sql = string.Format("exec return_req_initByRoute_package {0} , '{1}' "
+                    , objFilter.route_id == null ? "null" : objFilter.route_id.ToString()
+                    , objFilter.document_date == null ? "" : string.Format("{0:yyyy-MM-dd}", objFilter.document_date)
+                );
+                objData._lstVwPackages =
+                    UnitOfWork.Context.Query<vwReturnRequisitionPackageModel>().FromSql(sql).ToList();
 
 
+                sql = string.Format("exec return_req_prepareItemByRoute {0} , '{1}' "
+                    , objFilter.route_id == null ? "null" : objFilter.route_id.ToString()
+                    , objFilter.document_date == null ? "" : string.Format("{0:yyyy-MM-dd}", objFilter.document_date)
+                );
+                objData._lstVwPrepareItems =
+                    UnitOfWork.Context.Query<ReturnRequisitionItemPrepare>().FromSql(sql).ToList();
+
+                return objData;
             }
             catch (Exception ex)
             {
@@ -286,23 +337,20 @@ namespace IceFactory.Module.ReturnRequisition
             }
             finally
             {
-
             }
         }
+
         public async Task<int> executeDeteteStatus(Int32 id, Int32? iUserID)
         {
             try
             {
-
                 using (var cmd = UnitOfWork.Context.Database.GetDbConnection().CreateCommand())
                 {
                     cmd.CommandText = "up_mas_product_delete";
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.Add(new SqlParameter("@productID", SqlDbType.BigInt) { Value = id });
-                    cmd.Parameters.Add(new SqlParameter("@user_id", SqlDbType.BigInt) { Value = iUserID ?? 1 });
-
-
+                    cmd.Parameters.Add(new SqlParameter("@productID", SqlDbType.BigInt) {Value = id});
+                    cmd.Parameters.Add(new SqlParameter("@user_id", SqlDbType.BigInt) {Value = iUserID ?? 1});
 
 
                     //cmd.Parameters.Add(new SqlParameter("@id", SqlDbType.BigInt) { Direction = ParameterDirection.Output });
@@ -313,7 +361,6 @@ namespace IceFactory.Module.ReturnRequisition
                     }
 
                     return await cmd.ExecuteNonQueryAsync();
-
                 }
             }
             catch (Exception ex)
@@ -322,34 +369,32 @@ namespace IceFactory.Module.ReturnRequisition
             }
             finally
             {
-
             }
         }
 
 
-        public async Task<IQueryable<vwReturnRequisitionProductModel>> searchRequisitionProduct(filterReturnRequisition objFilter)
+        public async Task<IQueryable<vwReturnRequisitionProductModel>> searchRequisitionProduct(
+            filterReturnRequisition objFilter)
         {
             try
             {
-
                 string sql = string.Format("exec req_search_product {0} , '{1}'"
-                    , objFilter.requisition_id == null ? "null" : objFilter.requisition_id.ToString()
+                    , objFilter.retrun_requisition_id == null ? "null" : objFilter.retrun_requisition_id.ToString()
                     , objFilter.status
-                    );
-
+                );
 
 
                 ReturnRequisitionDataModel objData = new ReturnRequisitionDataModel();
                 //List<vwReturnRequisitionModel> dd = UnitOfWork.Context.Query<vwReturnRequisitionModel>().FromSql(sql).ToList();
                 //if (dd.Count() > 0)
                 //{
-                return UnitOfWork.Context.Query<vwReturnRequisitionProductModel>().FromSql(sql);// UnitOfWork.Context.Query<vwReturnRequisitionModel>().FromSql(sql).FirstOrDefault();
+                return UnitOfWork.Context.Query<vwReturnRequisitionProductModel>()
+                    .FromSql(sql); // UnitOfWork.Context.Query<vwReturnRequisitionModel>().FromSql(sql).FirstOrDefault();
                 //objData._master = UnitOfWork.Context.Set<ReturnRequisitionModel>().Where(w => w.requisition_id.Equals(i)).FirstOrDefault();
                 //objData._lstProducts = UnitOfWork.Context.Set<RequisitionProductModel>().Where(w => w.requisition_id.Equals(i)).ToList();
                 //objData._lstPackages = UnitOfWork.Context.Set<RequisitionPackageModel>().Where(w => w.requisition_id.Equals(i)).ToList();
                 ////}
                 //return objData;
-
             }
             catch (Exception ex)
             {
@@ -357,7 +402,6 @@ namespace IceFactory.Module.ReturnRequisition
             }
             finally
             {
-
             }
         }
 
@@ -366,15 +410,11 @@ namespace IceFactory.Module.ReturnRequisition
         {
             try
             {
-
                 string sql = string.Format("exec req_initByRoute {0} ", routeId);
-
 
 
                 ReturnRequisitionDataModel objData = new ReturnRequisitionDataModel();
                 return UnitOfWork.Context.Query<vwReturnRequisitionModel>().FromSql(sql).FirstOrDefault();
-
-
             }
             catch (Exception ex)
             {
@@ -382,7 +422,6 @@ namespace IceFactory.Module.ReturnRequisition
             }
             finally
             {
-
             }
         }
 

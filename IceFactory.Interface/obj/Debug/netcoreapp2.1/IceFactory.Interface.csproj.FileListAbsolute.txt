@@ -1,12 +1,12 @@
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\bin\Debug\netcoreapp2.1\IceFactory.Interface.deps.json
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\bin\Debug\netcoreapp2.1\IceFactory.Interface.dll
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\bin\Debug\netcoreapp2.1\IceFactory.Interface.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\obj\Debug\netcoreapp2.1\IceFactory.Interface.csprojAssemblyReference.cache
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\obj\Debug\netcoreapp2.1\IceFactory.Interface.csproj.CoreCompileInputs.cache
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\obj\Debug\netcoreapp2.1\IceFactory.Interface.AssemblyInfoInputs.cache
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\obj\Debug\netcoreapp2.1\IceFactory.Interface.AssemblyInfo.cs
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\obj\Debug\netcoreapp2.1\IceFactory.Interface.dll
 D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\obj\Debug\netcoreapp2.1\IceFactory.Interface.pdb
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Interface\obj\Debug\netcoreapp2.1\IceFactory.Interface.csprojAssemblyReference.cache
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Interface\bin\Debug\netcoreapp2.1\IceFactory.Interface.deps.json
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Interface\bin\Debug\netcoreapp2.1\IceFactory.Interface.dll
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Interface\bin\Debug\netcoreapp2.1\IceFactory.Interface.pdb

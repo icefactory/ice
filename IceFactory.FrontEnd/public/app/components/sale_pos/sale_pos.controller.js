@@ -13,6 +13,10 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
     //
     //
     //------------------------------------------------------------------------------------------------
+    var lstPriceAgency = [];
+    var lstProduct = [];
+    var lstPackage = [];
+
     var dt = new Date();
     $scope.reqData = {
         requisition_id: 0,
@@ -74,17 +78,30 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
     $scope.rowSelect = null;
     $scope.dataSelect = {};
     var colDefine = [
-        {/*"title": "รหัสสินค้า",*/ "className": "text-center", "data": "product_id", "width": "50px", bSort: false},
-        {/*"title": "ซื้อสินค้า", */"className": "text-left", "data": "description"},
+        {
+            /*"title": "รหัสสินค้า",*/
+            "className": "text-center",
+            "data": "product_id",
+            "width": "30px",
+            bSort: false,
+            bVisible: false
+        },
+        //{/*"title": "ซื้อสินค้า", */"className": "text-left", "data": "description"},
+        {
+            /*"title": "ซื้อสินค้า",*/ "className": "text-left",// "data": "product_name",
+            mRender: function (data, type, row, meta) {
+                return '<div style="">' + row.product_name + '<span class=" pull-right">' + row.price + ' บาท</span></div><span class=" pull-right">' + ((row.package_name == null) ? "" : row.package_name) + '</span>';
+            }
+        },
         {
             //"title": "จ่ายจำนวน",
             //"width": "150px",
             "className": "text-center",
             //bSortable: false,
             mRender: function (data, type, row, meta) {
-                var edit = '<div class="btn-group-xs btn-corner"><button id="btnSubtract" class="btn btn-danger"><i class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i></button><button id="btnEdit" type="button" class="btn btn-white btn-pink btn-xs" style="width: 40px;">' + row.quantity + '</button><button id="btnPlus" class="btn btn-success"><i class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i></button></div>';
-                var display = '<div>' + row.quantity + '</div>';
-                return (isDisplay) ? display : edit
+                var edit = '<div class="btn-group-xs btn-corner pull-left"><button id="btnSubtract" class="btn btn-danger"><i class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i></button><button id="btnEdit" type="button" class="btn btn-white btn-pink btn-xs" style="width: 40px;">' + row.quantity + '</button><button id="btnPlus" class="btn btn-success"><i class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i></button></div>';
+                var display = '<div class=" pull-left">' + row.quantity + '</div>';
+                return ((isDisplay) ? display : edit) + '<span class="pull-right">' + row.unit_name + '</span>'
             }
         },
         {
@@ -107,7 +124,9 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
         "columns": colDefine,
         "autoWidth": true,
         "data": [],
-        "order": [[0, 'asc']]
+        "order": [[0, 'asc']],
+        "bInfo": false,
+        "bLengthMenu": false, // Hide page lengthMenu
     });
 
     $('#tbPickData tbody').on('click', 'tr', function () {
@@ -164,6 +183,138 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
             calcTotalnet();
         }
     });
+
+
+    var colDefinePKG = [
+        {/*"title": "id",*/ "className": "text-center", "data": "id", "width": "80px", bVisible: false},
+        {/*"title": "รหัส",*/ "className": "text-center", "data": "product_id", "width": "80px", bVisible: false},
+        //{/*"title": "ชื่อบรรจุภัณฑ์", */"className": "text-left", "data": "product_name"},
+        //{"title": "ขอเบิก", "width": "80px", "className": "text-center", "data": "req_forward_qty"},
+        {
+            /*"title": "ซื้อสินค้า",*/ "className": "text-left",// "data": "product_name",
+            mRender: function (data, type, row, meta) {
+                return '<div style="">' + row.product_name + '<span class=" pull-right">' + row.price + ' บาท</span></div>';
+            }
+        },
+        {
+            //"title": "จ่ายจำนวน",
+            //"width": "150px",
+            "className": "text-center",
+            //bSortable: false,
+            mRender: function (data, type, row, meta) {
+                var edit = '<div class="btn-group-xs btn-corner pull-left"><button id="btnSubtract" class="btn btn-danger"><i class="icon-only  ace-icon ace-icon fa fa-minus bigger-110"></i></button><button id="btnEdit" type="button" class="btn btn-white btn-pink btn-xs" style="width: 40px;">' + row.quantity + '</button><button id="btnPlus" class="btn btn-success"><i class="icon-only  ace-icon ace-icon fa fa-plus bigger-110"></i></button></div>';
+                var display = '<div class=" pull-left">' + row.quantity + '</div>';
+                return ((isDisplay) ? display : edit) + '<span class="pull-right">' + row.unit_name + '</span>'
+            }
+        },
+        {
+            /*"title": "ซื้อสินค้า", */
+            "width": "80px",
+            "className": "text-right",
+            "data": "price_net",
+            render: $.fn.dataTable.render.number(',', '.', 0, '')
+        },
+    ]
+
+    var tablePKG = $('#tbPackage').DataTable({
+        "paging": false,
+        "destroy": true,
+        "searching": false,
+        "ordering": false,
+        "processing": false,
+        "serverSide": false,
+        "columns": colDefinePKG,
+        "autoWidth": true,
+        "data": [],
+        "order": [[0, 'asc']],
+        "bLength": false,
+        "bInfo": false,
+    });
+
+    $('#tbPackage tbody').on('click', 'tr', function () {
+        if ($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+        } else {
+            tablePKG.$('tr.selected').removeClass('selected');
+            $(this).addClass('selected');
+        }
+    });
+
+    $('#tbPackage tbody').on('click', '#btnEdit', function () {
+        //var table = $('#tbPackage').DataTable();
+        var data = tablePKG.row($(this).parents('tr')).data();
+        var idx = tablePKG.row($(this).parents('tr')).index();
+        //console.log(data);
+        scope.param = data;
+        openDlgNumpad().result.then(function (dialogResult) {
+            if (dialogResult != null) {
+                var data = {
+                    id: 0,
+                    product_id: product_id,
+                    product_name: product_name,
+                    req_forward_qty: 0,
+                    quantity: parseInt(dialogResult)
+                };
+
+                data.price_net = data.price * data.quantity;
+                if (data.quantity > 0) {
+                    //var table = $('#tbProduct').DataTable();
+                    tablePKG.dataTable().fnAddData(data);
+                    tablePKG.dataTable().fnDraw();
+
+                    $("#pickPackageId_" + product_id).attr("style", "display:none;")
+
+                    //table.on('order.dt search.dt', function () {
+                    //    table.column(0, {search: 'applied', order: 'applied'}).nodes().each(function (cell, i) {
+                    //        cell.innerHTML = i + 1;
+                    //    });
+                    //}).draw();
+
+                    calcTotalnet();
+                }
+            }
+        });
+
+    });
+
+
+    $('#tbPackage tbody').on('click', '#btnPlus', function () {
+        //var tablePKG = $('#tbPackage').DataTable();
+        var data = tablePKG.row($(this).parents('tr')).data();
+        var idx = tablePKG.row($(this).parents('tr')).index();
+        //console.log(data);
+        //if (data.quantity > 0) {
+        data.quantity += 1;
+        /*if (data.id < 0) {
+         data.req_forward_qty = data.quantity;
+         }*/
+
+        data.price_net = data.price * data.quantity;
+        $('#tbPackage').DataTable().row(idx).data(data).draw();
+        //}
+
+        calcTotalnet();
+    });
+
+
+    $('#tbPackage tbody').on('click', '#btnSubtract', function () {
+        //var table = $('#tbPackage').DataTable();
+        var data = tablePKG.row($(this).parents('tr')).data();
+        var idx = tablePKG.row($(this).parents('tr')).index();
+        if (data.quantity > 0) {
+            data.quantity -= 1;
+            /*if (data.id < 0) {
+             data.req_forward_qty = data.quantity;
+             }*/
+
+            data.price_net = data.price * data.quantity;
+            $('#tbPackage').DataTable().row(idx).data(data).draw();
+
+            calcTotalnet();
+        }
+    });
+
+
     //------------------------------------------------------------------------------------------------
     //
     //
@@ -189,20 +340,44 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
     //
     //------------------------------------------------------------------------------------------------
     let scope = $scope.$new();
-    $scope.showDlgNumpad = function (product_id, product_name, price_in) {
+
+    $scope.pickPackage = function (product_id, product_name) {
         if (isDisplay == false) {
-            var data = {
-                product_id: 0,
-                description: "",
-                quantity: 0,
-                price: 0,
-                price_net: 0,
-            };
-            data.product_id = product_id;
-            data.description = product_name + ' = ' + price_in + ' บาท';
-            data.price = price_in;
-            // calc price net
-            data.price_net = data.price * data.quantity;
+            if ($scope.reqData.route_name == "") {
+                dialogService.messageDialog("แจ้งเตือน", "กรุณาเลือกสายรภ");
+                return;
+            }
+            openDlgNumpad().result.then(function (dialogResult) {
+                if (dialogResult != null) {
+                    var data = {
+                        id: 0,
+                        product_id: product_id,
+                        product_name: product_name,
+                        req_forward_qty: 0,
+                        quantity: parseInt(dialogResult)
+                    };
+                    if (data.quantity > 0) {
+                        //var table = $('#tbProduct').DataTable();
+                        $('#tbPackage').dataTable().fnAddData(data);
+                        $('#tbPackage').dataTable().fnDraw();
+
+                        $("#pickPackageId_" + product_id).attr("style", "display:none;")
+
+                        $("#packageCount").html(tablePKG.rows().count());
+                        //table.on('order.dt search.dt', function () {
+                        //    table.column(0, {search: 'applied', order: 'applied'}).nodes().each(function (cell, i) {
+                        //        cell.innerHTML = i + 1;
+                        //    });
+                        //}).draw();
+                    }
+                }
+            });
+        }
+    };
+    $scope.pickProduct = function (product_id, product_name) {
+        if (isDisplay == false) {
+
+
 
             /*let modalDialog = $uibModal.open({
              animation: $scope.animationsEnabled,
@@ -217,16 +392,28 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
              }
              }
              });*/
-            let modalDialog = openDlgNumpad();
-            modalDialog.result.then(function (dialogResult) {
+            //let modalDialog = openDlgNumpad();
+            openDlgNumpad().result.then(function (dialogResult) {
                 if (dialogResult != null) {
-                    //var data = {
-                    //    id: 0,
-                    //    product_id: product_id,
-                    //    product_name: product_name,
-                    //    req_forward_qty: 0,
-                    //    quantity: parseInt(dialogResult)
-                    //};
+                    var objProduct = _.head(_.filter(lstProduct, {'product_id': product_id}));
+                    var objPackage = _.head(_.filter(lstProduct, {'product_id': objProduct.item_id})); // get first element
+                    var data = {
+                        id: 0,
+                        product_id: objProduct.product_id,
+                        product_name: objProduct.product_name,
+                        req_forward_qty: 0,
+                        quantity: parseInt(dialogResult),
+                        unit_name: objProduct.unit_name,
+                        package_name: (objPackage != null ? "(" + objPackage.product_name + ")" : ""),
+                        price: 0,
+                        price_net: 0,
+                    };
+                    data.product_id = objProduct.product_id;
+                    data.description = objProduct.product_name + ' = ' + objProduct.price_out + ' บาท';
+                    data.price = objProduct.price_out;
+                    // calc price net
+                    data.price_net = data.price * data.quantity;
+
                     data.quantity = parseInt(dialogResult);
                     // calc price net
                     data.price_net = data.price * data.quantity;
@@ -237,6 +424,40 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
                         $('#tbPickData').dataTable().fnDraw();
 
                         $("#pickid_" + product_id).attr("style", "display:none;")
+
+                        if (objProduct.item_id > 0) {
+
+                            data = {
+                                id: 0,
+                                product_id: objPackage.product_id,
+                                product_name: objPackage.product_name,
+                                req_forward_qty: 0,
+                                quantity: parseInt(dialogResult),
+                                unit_name: objPackage.unit_name,
+                                price: objPackage.price_out,
+                                price_net: 0,
+                            };
+                            data.price_net = data.price * data.quantity;
+
+                            var rowIndexes = -1;
+                            $('#tbPackage').DataTable().rows(function (idx, data, node) {
+                                if (data.product_id === objPackage.product_id) {
+                                    rowIndexes = idx;
+                                    data.quantity += parseInt(dialogResult)
+                                    $('#tbPackage').DataTable().row(rowIndexes).data(data).draw();
+                                }
+                            });
+                            if (rowIndexes < 0) {
+
+                                $('#tbPackage').dataTable().fnAddData(data);
+                                $('#tbPackage').dataTable().fnDraw();
+
+                                $("#pickPackageId_" + objPackage.product_id).attr("style", "display:none;")
+
+                                $("#packageCount").html(tablePKG.rows().count());
+                            }
+
+                        }
 
                         calcTotalnet();
 
@@ -319,9 +540,33 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
 
         modalDialog.result.then(function (dialogResult) {
             if (dialogResult != null) {
-                debugger;
                 $scope.customerInfo.customer_id = dialogResult.customer_id;
                 $scope.customerInfo.customer_fullname = dialogResult.customer_name + ' ' + dialogResult.customer_surname;
+
+                getPriceAgency(dialogResult.customer_id, function () {
+                    var data = table.rows().data().toArray();
+                    var dataPKG = tablePKG.rows().data().toArray();
+                    data.forEach(function (obj) {
+                        var objProduct = _.head(_.filter(lstProduct, {product_id: obj.product_id}));
+                        obj.price = objProduct.price_out;
+                        obj.price_net = obj.price * obj.quantity;
+                    });
+                    debugger;
+                    $('#tbPickData').DataTable().clear();
+                    $('#tbPickData').dataTable().fnAddData(data);
+                    $('#tbPickData').dataTable().fnDraw();
+                    dataPKG.forEach(function (obj) {
+                        var objProduct = _.head(_.filter(lstProduct, {product_id: obj.product_id}));
+
+                        obj.price = objProduct.price_out;
+                        obj.price_net = obj.price * obj.quantity;
+                    });
+                    $('#tbPackage').DataTable().clear();
+                    $('#tbPackage').dataTable().fnAddData(dataPKG);
+                    $('#tbPackage').dataTable().fnDraw();
+                    calcTotalnet();
+                });
+
             }
         });
     };
@@ -336,7 +581,7 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
             backdrop: "static",
             resolve: {
                 model: function () {
-                    //return tbRowId;
+                    return 0;
                 }
             }
         });
@@ -380,12 +625,15 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
 
 
     $scope.saveData = function () {
-        var table = $('#tbPickData').DataTable();
+        //var table = $('#tbPickData').DataTable();
         var data = table.rows().data().toArray();
+        var dataPKG = tablePKG.rows().data().toArray();
         $scope.newData.customer_id = $scope.customerInfo.customer_id;
         var postData = {
             _master: $scope.newData,
             _lstProducts: data,
+            _lstPackages: dataPKG,
+
         }
 
         console.log(postData);
@@ -398,7 +646,6 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
                     window.location.reload();
                 }
             }, function (err) {
-                debugger;
                 var sMsg = "";
                 if (err.length > 0) {
                     err.forEach(function () {
@@ -412,7 +659,6 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
     var loadDataReqRoute = function () {
         var dt = new Date();
         var dataProduct = [];
-        debugger;
         var objFilter = {
             requisition_id: $scope.reqData.requisition_id,
             route_id: $scope.reqData.route_id,
@@ -426,9 +672,9 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
 
                 if (response.result.length > 0) {
                     var dataReq = JSON.parse(JSON.stringify(response.result[0]));
-                    dataReq.requisition_type = "APR"; // บันทึกจ่ายสินค้า
+                    dataReq.requisition_type = "POS"; // บันทึกจ่ายสินค้า
                     $scope.reqData = dataReq;
-                    newData = dataReq;
+                    $scope.newData = dataReq;
                     if (dataReq.requisition_status == 2) {
                         isDisplay = true;
                         $("#btnGrp").attr("style", "display:none;");
@@ -462,7 +708,6 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
 
             requisitionService.searchReqProduct(objFilter).then(function (responseDet) {
 
-                //debugger;
                 if (responseDet.result.length > 0) {
                     var dataProduct = responseDet.result;
                     //console.log(dataProduct);
@@ -482,19 +727,21 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
         }
     }
 
-
     var initImgProduct = function () {
 
         var param = {};
         productService.search(param).then(function (result) {
-            debugger;
             if (result) {
-                //console.log(result);
-                result.forEach(function (data, index) {
-                    if (data.product_type == 1) {
+
+                lstProduct = result;
+                var lstImgProduct = _.filter(lstProduct, {'product_type': 1});
+                var lstImgPackage = _.filter(lstProduct, {'product_type': 2});
+
+                lstImgProduct.forEach(function (data, index) {
+                    if (data.product_type == 1 && data.type_id != 0) {
 
                         var li = $('<li id="pickid_' + data.product_id + '"></li>');
-                        var tagA = $('<a ng-click="showDlgNumpad(' + data.product_id + ',\'' + data.product_name + '\',' + data.price_in + ');" data-rel="colorbox" class="cboxElement"></a>');
+                        var tagA = $('<a ng-click="pickProduct(' + data.product_id + ',\'' + data.product_name + '\');" data-rel="colorbox" class="cboxElement"></a>');
                         var pickImg = $('<img width="130" height="130" alt="150x150" src="' + data.img_path + '">');
                         var pickTxt = $('<div class="text"><div class="inner">' + data.product_name + '</div></div>');
 
@@ -503,7 +750,23 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
                         $("#boxPickProduct").append(li);
                     }
                 });
-                var temp = $compile($("#boxPickProduct"))($scope);
+                lstImgPackage.forEach(function (data, index) {
+                    if (data.product_type == 2 && data.type_id != 0) {
+
+                        var Packli = $('<li id="pickPackageId_' + data.product_id + '"></li>');
+                        var PacktagA = $('<a ng-click="pickPackage(' + data.product_id + ',\'' + data.product_name + '\');" data-rel="colorbox" class="cboxElement"></a>');
+                        var PackpickImg = $('<img width="130" height="130" alt="150x150" src="' + data.img_path + '">');
+                        var PackpickTxt = $('<div class="text"><div class="inner">' + data.product_name + '</div></div>');
+
+                        PacktagA.append([PackpickImg, PackpickTxt]);
+                        Packli.append(PacktagA);
+                        $("#boxPickPackage").append(Packli);
+                    }
+                });
+                $compile($("#boxPickProduct"))($scope);
+                var temp = $compile($("#boxPickPackage"))($scope);
+
+                getPriceAgency($scope.customerInfo.customer_id, null);
             }
         }, function (err) {
             console.log(err);
@@ -512,13 +775,16 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
     }
 
     var calcTotalnet = function () {
-        var table = $('#tbPickData').DataTable();
+        //var table = $('#tbPickData').DataTable();
         var lstData = table.rows().data().toArray();
+        var lstPKG = tablePKG.rows().data().toArray();
         var sumPrice = 0;
         lstData.forEach(function (item) {
             sumPrice += item.price_net;
         });
-
+        lstPKG.forEach(function (item) {
+            sumPrice += item.price_net;
+        });
         $scope.slipInfo.item_count = lstData.length;
         $scope.slipInfo.price_amt = sumPrice;
         $scope.slipInfo.total_net = sumPrice;
@@ -543,6 +809,30 @@ angular.module('IceFactory').controller("SalePOSController", function ($compile,
         });
 
     };
+    var getPriceAgency = function (cus_id, callBack) {
+        productService.getPrice(cus_id)
+            .then(function (response) {
+                if (response.length > 0) {
+                    lstPriceAgency = response;
+
+                    lstProduct.forEach(function (obj) {
+                        var objPriceAgency = _.head(_.filter(lstPriceAgency, {product_id: obj.product_id}));
+                        obj.price_out = objPriceAgency.price;
+                    });
+                    if (callBack != null) {
+                        callBack();
+                    }
+                }
+            }, function (err) {
+                var sMsg = "";
+                if (err.length > 0) {
+                    err.forEach(function () {
+                        sMsg += err.message;
+                    });
+                }
+                alert(err);
+            })
+    }
 })
 ;
 

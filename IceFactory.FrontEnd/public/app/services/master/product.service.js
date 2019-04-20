@@ -52,6 +52,10 @@ IceFactory.factory("productService", function ($http, $q, $rootScope, handlerSer
         return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
     }
 
+    function getPrice(cudId) {
+        let request = $http.get(uri + "/getPrice/" + cudId);
+        return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
+    }
     function getDs() {
         /*return new kendo.data.DataSource({
          batch: true,
@@ -101,6 +105,7 @@ IceFactory.factory("productService", function ($http, $q, $rootScope, handlerSer
     return ({
         model: model,
         get: get,
+        getPrice: getPrice,
         insert: insert,
         update: update,
         deleted: deleted,

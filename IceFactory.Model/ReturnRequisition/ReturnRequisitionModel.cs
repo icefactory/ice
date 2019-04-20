@@ -2,52 +2,56 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace IceFactory.Model.ReturnRequisition
 {
     public class ReturnRequisitionDataModel
     {
-
         public ReturnRequisitionModel _master { get; set; }
         public vwReturnRequisitionModel _vwMaster { get; set; }
         public List<ReturnRequisitionProductModel> _lstProducts { get; set; }
+        public List<ReturnRequisitionItemModel> _lstItems { get; set; }
         public List<ReturnRequisitionPackageModel> _lstPackages { get; set; }
+
+
+        public List<vwReturnRequisitionProductModel> _lstVwProducts { get; set; }
+        public List<vwReturnRequisitionItemModel> _lstVwItems { get; set; }
+        public List<vwReturnRequisitionPackageModel> _lstVwPackages { get; set; }
+
+        public List<ReturnRequisitionItemPrepare> _lstVwPrepareItems { get; set; }
+
         //public List<vwReturnRequisitionProductModel> _lstVWProducts { get; set; }
         //public List<vwReturnRequisitionProductModel> _lstVWPackages { get; set; }
-
     }
+
     public class ReturnRequisitionProp : BaseEntity
     {
-        public Int32 return_document_id { get; set; }
+        public string return_document_no { get; set; }
         public DateTime? return_document_date { get; set; }
-        public Int32 sum_quantity { get; set; }
-        public Int32 price_net { get; set; }
-        public Int32 arears_price { get; set; }
-        public Int32 customer_arrears_price { get; set; }
-        public Int32 customer_flag { get; set; }
-        public Int32 customer_id { get; set; }
-        public Int32 pay_amt { get; set; }
-        public Int32 ice_melt { get; set; }
+        public int? sum_quantity { get; set; }
+        public int? price_net { get; set; }
+        public int? arears_price { get; set; }
+        public int? customer_arrears_price { get; set; }
+        public int? customer_flag { get; set; }
+        public int? customer_id { get; set; }
+        public int? pay_amt { get; set; }
+        public int? ice_melt { get; set; }
         public DateTime? payment_date { get; set; }
-        public Int32 sell_type { get; set; }
+        public int? sell_type { get; set; }
         public string description { get; set; }
-        public Int32 route_id { get; set; }
-        public Int32 transporter1_id { get; set; }
-        public Int32 transporter2_id { get; set; }
-        public Int32 round { get; set; }
-        public Int32 user_id { get; set; }
+        public int? route_id { get; set; }
+        public int? transporter1_id { get; set; }
+        public int? transporter2_id { get; set; }
+        public int? round { get; set; }
+        public int? user_id { get; set; }
         public string ref_requisition_id { get; set; }
-        public Int32 is_active { get; set; }
+        public int? is_active { get; set; }
         public string status { get; set; }
-
     }
+
     public class ReturnRequisitionModel : ReturnRequisitionProp
     {
-        [Key]
-        public Int32 retrun_requisition_id { get; set; }
-
+        [Key] public Int32 retrun_requisition_id { get; set; }
     }
 
     public class vwReturnRequisitionModel : ReturnRequisitionProp
@@ -60,83 +64,103 @@ namespace IceFactory.Model.ReturnRequisition
         public string customer_name { get; set; }
         public string create_user_name { get; set; }
         public string modify_user_name { get; set; }
-
     }
 
-    public class ReturnRequisitionProductModel : BaseEntity
+    public class ReturnRequisitionProductProp : BaseEntity
     {
-
-        [Key]
-
-        public Int32 id { get; set; }
-        public Int32 requisition_id { get; set; }
-        public Int32 product_id { get; set; }
-        [DefaultValue(0)]
-        public Int32 quantity { get; set; }
-        [DefaultValue(0)]
-        public Int32 req_forward_qty { get; set; }
-        [DefaultValue(0)]
-        public Int32 price { get; set; }
-
-        public string document_no { get; set; }
+        public string return_document_no { get; set; }
+        public int product_id { get; set; }
+        public int? quantity { get; set; }
+        public int? return_quantity { get; set; }
+        public int? ice_melt { get; set; }
+        public int? product_ref { get; set; }
         public string status { get; set; }
-
+        public int retrun_requisition_id { get; set; }
     }
 
-    public class vwReturnRequisitionProductModel
+    public class ReturnRequisitionProductModel : ReturnRequisitionProductProp
     {
+        [Key] public int return_product_id { get; set; }
+    }
 
-        public Int32 id { get; set; }
-        public Int32 requisition_id { get; set; }
-        public Int32 product_id { get; set; }
-        public Int32 quantity { get; set; }
-        [DefaultValue(0)]
-        public Int32 req_forward_qty { get; set; }
-        public Int32 price { get; set; }
+    public class vwReturnRequisitionProductModel : ReturnRequisitionProductProp
+    {
+        public int return_product_id { get; set; }
+        public string product_name { get; set; }
+        public int? total_amt { get; set; }
+    }
 
-        public string document_no { get; set; }
+    public class ReturnRequisitionPackageProp
+    {
+        public string return_document_no { get; set; }
+        public int product_id { get; set; }
+        public int? quantity { get; set; }
+        public int? return_quantity { get; set; }
+        public int? damage { get; set; }
+        public int? return_package_status { get; set; }
+        public string status { get; set; }
+        public int retrun_requisition_id { get; set; }
+    }
+
+    public class ReturnRequisitionPackageModel : ReturnRequisitionPackageProp
+    {
+        [Key] public int return_requisition_package_id { get; set; }
+    }
+
+    public class vwReturnRequisitionPackageModel : ReturnRequisitionPackageProp
+    {
+        public int return_requisition_package_id { get; set; }
+        public string package_name { get; set; }
+        public int? total_amt { get; set; }
+    }
+
+
+    public class ReturnRequisitionItemProp
+    {
+        public string return_document_no { get; set; }
+        public int order_no { get; set; }
+        public int? product_id { get; set; }
+        public int? customer_id { get; set; }
+        public int? quantity { get; set; }
+        public int? price { get; set; }
+        public int? sum_price { get; set; }
+        public int? arrears_price { get; set; }
+        public int? return_requisition_status { get; set; }
+        public string product_ref { get; set; }
         public string status { get; set; }
 
+        public int retrun_requisition_id { get; set; }
+    }
+
+    public class ReturnRequisitionItemModel : ReturnRequisitionItemProp
+    {
+        [Key] public int return_requisition_item_id { get; set; }
+    }
+
+    public class vwReturnRequisitionItemModel : ReturnRequisitionItemProp
+    {
+        public int return_requisition_item_id { get; set; }
+        public string product_name { get; set; }
+    }
+
+    public class ReturnRequisitionItemPrepare
+    {
+        public int? product_id { get; set; }
         public string product_name { get; set; }
 
+        [DefaultValue(0)] public int? price { get; set; }
+
+        public int? total_amt { get; set; }
+        public int? balance_amt { get; set; }
+        public int? sumsell_amt { get; set; }
+        public string product_ref { get; set; }
     }
 
-    public class ReturnRequisitionPackageModel : BaseEntity
-    {
-        [Key]
-        public Int32 id { get; set; }
-        public Int32 requisition_id { get; set; }
-        public Int32 product_id { get; set; }
-        public Int32 quantity { get; set; }
-        public string document_id { get; set; }
-        public string status { get; set; }
-    }
-
-    public class vwReturnRequisitionPackageModel
-    {
-        public Int32 id { get; set; }
-        public Int32 requisition_id { get; set; }
-        public Int32 product_id { get; set; }
-        public Int32 quantity { get; set; }
-        public string document_no { get; set; }
-        public string status { get; set; }
-        public string product_name { get; set; }
-
-    }
     public class filterReturnRequisition
     {
-
-        public int? id { get; set; }
-        public int? requisition_id { get; set; }
+        public int? retrun_requisition_id { get; set; }
         public int? route_id { get; set; }
-        public int? round { get; set; }
-        public string route_name { get; set; }
-        public int? product_id { get; set; }
-        public string document_no { get; set; }
         public string document_date { get; set; }
         public string status { get; set; }
-        public string product_name { get; set; }
-        public string requisition_type { get; set; }
-
     }
 }

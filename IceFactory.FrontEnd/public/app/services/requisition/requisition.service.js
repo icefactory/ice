@@ -57,6 +57,11 @@ IceFactory.factory("requisitionService", function ($http, $q, $rootScope, handle
         return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
     }
 
+    function searchReqPackage(objFilter) {
+        let request = $http.post(uri + "/searchReqPackage", objFilter);
+        return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
+    }
+
     function getById(id) {
         let request = $http.get(uri + "/" + id);
         return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
@@ -84,7 +89,7 @@ IceFactory.factory("requisitionService", function ($http, $q, $rootScope, handle
     //
     //--------------------------------------------------------------------------------
     function saveData(data) {
-        //console.log(data);
+        console.log("call SaveData");
         let request = $http.post(uri + "/saveData", data);
         return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
     }
@@ -120,6 +125,7 @@ IceFactory.factory("requisitionService", function ($http, $q, $rootScope, handle
         getById: getById,
         initial: initial,
         searchReq: searchReq,
-        searchReqProduct: searchReqProduct
+        searchReqProduct: searchReqProduct,
+        searchReqPackage: searchReqPackage,
     });
 });

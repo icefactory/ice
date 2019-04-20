@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace IceFactory.Model.Master
 {
@@ -16,9 +12,9 @@ namespace IceFactory.Model.Master
 
         #endregion
     }
+
     public class ProductProp : BaseEntity
     {
-
         public int? seq { get; set; }
         public string product_name { get; set; }
         public int? product_type { get; set; }
@@ -34,35 +30,28 @@ namespace IceFactory.Model.Master
         public int? remain_amt { get; set; }
         public DateTime? stock_last_update { get; set; }
         public string img_path { get; set; }
-
     }
-     
+
     public class ProductModel : ProductProp
     {
-        
-        [Key]
-        public Int32 product_id { get; set; }
-
+        [Key] public Int32 product_id { get; set; }
     }
 
 
     public class vwProductModel : ProductProp
     {
-
         public Int32 product_id { get; set; }
-        
+
         public virtual string unit_name { get; set; }
 
         public string secord_unit_name { get; set; }
-
+        public string package_name { get; set; }
     }
 
     public class filterProduct
     {
-
         public Int32? product_id { get; set; }
         public string product_name { get; set; }
         public string status { get; set; }
-
     }
 }

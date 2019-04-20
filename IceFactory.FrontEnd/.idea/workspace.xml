@@ -1,7 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92a03e7c-3356-4729-b365-a4e5045c6539" name="Default" comment="" />
+    <list default="true" id="92a03e7c-3356-4729-b365-a4e5045c6539" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../IceFactory.Api/Controllers/Security/AuthenticationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/IceFactoryController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/components/login/login.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IceFactory.Module/Security/AuthenticationModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.IceFactory/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.IceFactory/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.IceFactory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.IceFactory/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/IceFactory/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/IceFactory/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/IceFactory/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/IceFactory/v15/Server/sqlite3/storage.ide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/IceFactory/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/IceFactory/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/IceFactory/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/IceFactory/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/Controllers/Admin/Master/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/Controllers/Admin/Master/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/Controllers/Admin/Requisition/RequisitionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/Controllers/Admin/Requisition/RequisitionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/IceFactory.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/IceFactory.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Module.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Module.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Module.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Module.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Repository.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Repository.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Utility.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Utility.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Utility.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/bin/Debug/netcoreapp2.1/IceFactory.Utility.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Api/obj/Debug/netcoreapp2.1/IceFactory.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IceFactory.FrontEnd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IceFactory.FrontEnd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/angular/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular/angular-csp.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/angular/angular-csp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular/angular.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/angular/angular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular/angular.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/angular/angular.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular/angular.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/angular/angular.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/angular/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net-dt/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net-dt/License.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net-dt/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net-dt/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net-dt/css/jquery.dataTables.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net-dt/css/jquery.dataTables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net-dt/css/jquery.dataTables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net-dt/css/jquery.dataTables.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net-dt/js/dataTables.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net-dt/js/dataTables.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net-dt/js/dataTables.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net-dt/js/dataTables.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net-dt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net-dt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net/License.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net/js/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/datatables.net/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/datatables.net/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/AUTHORS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/dist/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/external/sizzle/dist/sizzle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/jsonp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/parseXML.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/nonce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/rquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/var/rquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/ajax/xhr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/attr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/attr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/classes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/prop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/attributes/val.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/callbacks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/DOMEval.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/DOMEval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/access.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/access.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/camelCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/camelCase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/nodeName.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/nodeName.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/parseHTML.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/parseHTML.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/ready-no-deferred.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready-no-deferred.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/readyException.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/readyException.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/stripAndCollapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/stripAndCollapse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/toType.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/toType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/core/var/rsingleTag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/addGetHookIf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/addGetHookIf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/adjustCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/adjustCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/curCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/showHide.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/showHide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/cssExpand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/getStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/getStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/isHiddenWithinTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/isHiddenWithinTree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rboxStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rboxStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rnumnonpx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/css/var/swap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/css/var/swap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/data/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/Data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/data/var/acceptData.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/acceptData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataPriv.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataPriv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/data/var/dataUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/deferred/exceptionHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deferred/exceptionHook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/deprecated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/dimensions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/Tween.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/effects/animatedSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/effects/animatedSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/alias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/focusin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/focusin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/event/trigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/event/trigger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/exports/amd.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/amd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/exports/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/exports/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/buildFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/buildFragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/getAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/getAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rcheckableType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rtagName.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/wrapMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/manipulation/wrapMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/offset.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/offset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/queue/delay.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/queue/delay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/selector-native.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector-sizzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/serialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/serialize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing/findFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/findFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/dir.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/dir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/siblings.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/traversing/var/siblings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/ObjectFunctionString.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/ObjectFunctionString.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/arr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/class2type.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/class2type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/concat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/concat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/documentElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/documentElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/fnToString.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/fnToString.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/getProto.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/getProto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/hasOwn.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/hasOwn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/indexOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/indexOf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/isFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/isFunction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/isWindow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/isWindow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/pnum.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/pnum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/push.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/rcssNum.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rcssNum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/rnothtmlwhite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/rnothtmlwhite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/var/toString.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/src/wrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/src/wrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/dialog/route-dialog.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/dialog/route-dialog.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/requisition/requisition.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/requisition/requisition.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/requisition/requisition.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/requisition/requisition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/routes/admin.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/routes/admin.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/services/master/product.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/services/master/product.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/services/master/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/services/master/user.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/services/requisition/requisition.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/services/requisition/requisition.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/services/return_requisition/return_requisition.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/services/return_requisition/return_requisition.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/services/ui-template/dialog/dialog.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/services/ui-template/dialog/dialog.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Interface/obj/Debug/netcoreapp2.1/IceFactory.Interface.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Interface/obj/Debug/netcoreapp2.1/IceFactory.Interface.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/Master/ProductModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/Master/ProductModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/Master/UserModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/Master/UserModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/Requisition/RequisitionModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/Requisition/RequisitionModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/ReturnRequisition/ReturnRequisitionModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/ReturnRequisition/ReturnRequisitionModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/bin/Debug/netcoreapp2.1/IceFactory.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/bin/Debug/netcoreapp2.1/IceFactory.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/bin/Debug/netcoreapp2.1/IceFactory.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/bin/Debug/netcoreapp2.1/IceFactory.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/obj/Debug/netcoreapp2.1/IceFactory.Model.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/obj/Debug/netcoreapp2.1/IceFactory.Model.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/obj/Debug/netcoreapp2.1/IceFactory.Model.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/obj/Debug/netcoreapp2.1/IceFactory.Model.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/obj/Debug/netcoreapp2.1/IceFactory.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/obj/Debug/netcoreapp2.1/IceFactory.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Model/obj/Debug/netcoreapp2.1/IceFactory.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Model/obj/Debug/netcoreapp2.1/IceFactory.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/IceFactory.Module.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/IceFactory.Module.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/Master/ProductModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/Master/ProductModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/Requisition/RequisitionModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/Requisition/RequisitionModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/ReturnRequisition/ReturnRequisitionModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/ReturnRequisition/ReturnRequisitionModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Module.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Module.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Module.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Module.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Repository.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Repository.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Utility.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Utility.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Utility.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/bin/Debug/netcoreapp2.1/IceFactory.Utility.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/obj/Debug/netcoreapp2.1/IceFactory.Module.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/obj/Debug/netcoreapp2.1/IceFactory.Module.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/obj/Debug/netcoreapp2.1/IceFactory.Module.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/obj/Debug/netcoreapp2.1/IceFactory.Module.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/obj/Debug/netcoreapp2.1/IceFactory.Module.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/obj/Debug/netcoreapp2.1/IceFactory.Module.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Module/obj/Debug/netcoreapp2.1/IceFactory.Module.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Module/obj/Debug/netcoreapp2.1/IceFactory.Module.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/Infrastructure/IceFactoryContext.cs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/Infrastructure/IceFactoryContext.cs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Repository.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Repository.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Utility.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Utility.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Utility.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/bin/Debug/netcoreapp2.1/IceFactory.Utility.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/obj/Debug/netcoreapp2.1/IceFactory.Repository.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/obj/Debug/netcoreapp2.1/IceFactory.Repository.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/obj/Debug/netcoreapp2.1/IceFactory.Repository.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/obj/Debug/netcoreapp2.1/IceFactory.Repository.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Repository/obj/Debug/netcoreapp2.1/IceFactory.Repository.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Repository/obj/Debug/netcoreapp2.1/IceFactory.Repository.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Utility/Security/Encryption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Utility/Security/Encryption.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Utility/bin/Debug/netcoreapp2.1/IceFactory.Utility.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Utility/bin/Debug/netcoreapp2.1/IceFactory.Utility.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Utility/bin/Debug/netcoreapp2.1/IceFactory.Utility.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Utility/bin/Debug/netcoreapp2.1/IceFactory.Utility.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Utility/obj/Debug/netcoreapp2.1/IceFactory.Utility.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Utility/obj/Debug/netcoreapp2.1/IceFactory.Utility.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Utility/obj/Debug/netcoreapp2.1/IceFactory.Utility.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Utility/obj/Debug/netcoreapp2.1/IceFactory.Utility.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceFactory.Utility/obj/Debug/netcoreapp2.1/IceFactory.Utility.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../IceFactory.Utility/obj/Debug/netcoreapp2.1/IceFactory.Utility.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,56 +250,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="requisition.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/services/requisition/requisition.service.js">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/routes/admin.routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2484">
-              <caret line="138" column="69" selection-start-line="138" selection-start-column="69" selection-end-line="138" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requisition_forward.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requisition.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/components/requisition/requisition.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="63" column="113" selection-start-line="63" selection-start-column="113" selection-end-line="63" selection-end-column="113" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+              <folding>
+                <element signature="e#1816#1822#0" expanded="true" />
+                <element signature="n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#12789#12795#0" expanded="true" />
+                <element signature="e#12885#12891#0" expanded="true" />
+                <element signature="e#12968#12974#0" expanded="true" />
+                <element signature="e#13064#13070#0" expanded="true" />
+                <element signature="e#13147#13153#0" expanded="true" />
+                <element signature="e#13245#13251#0" expanded="true" />
+                <element signature="e#13252#13258#0" expanded="true" />
+                <element signature="e#13259#13265#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,29 +274,92 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="317" column="54" selection-start-line="317" selection-start-column="54" selection-end-line="317" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requisition_forward.controller.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="818">
-              <caret line="274" lean-forward="true" selection-start-line="274" selection-end-line="274" />
+            <state relative-caret-position="542">
+              <caret line="1028" column="74" lean-forward="true" selection-start-line="960" selection-end-line="1028" selection-end-column="74" />
               <folding>
-                <element signature="n#style#0;n#button#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="e#38349#38434#0" expanded="true" />
+                <element signature="e#38562#38596#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dialog.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/services/ui-template/dialog/dialog.service.js">
+      <file leaf-file-name="IceFactoryController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/IceFactoryController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="1080">
+              <caret line="60" column="6" lean-forward="true" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#6958#7349#0" />
+                <element signature="e#7391#7783#0" />
+                <element signature="e#7825#8201#0" />
+                <element signature="e#8244#8636#0" />
+                <element signature="e#8677#9067#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/components/authority/users/users.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="51" column="78" selection-start-line="51" selection-start-column="78" selection-end-line="51" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="84" column="10" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/components/login/login.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="43" column="98" lean-forward="true" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/services/master/user.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -128,29 +391,23 @@
       <find>angular.module</find>
       <find>confirmDialogController</find>
       <find>onShow</find>
+      <find>scope.reqData</find>
+      <find>LoginController</find>
+      <find>languageStorage</find>
+      <find>btn</find>
+      <find>login</find>
+      <find>displayLoading</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/angular-datatables" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/app/login.js" />
-        <option value="$PROJECT_DIR$/public/app/template/footer.controller.js" />
-        <option value="$PROJECT_DIR$/public/app/template/header.controller.js" />
-        <option value="$PROJECT_DIR$/public/app/services/ui-template/dialog/dialog.service.js" />
-        <option value="$PROJECT_DIR$/public/app/services/ui-template/notification/notification.service.js" />
-        <option value="$PROJECT_DIR$/public/app/components/master/product/product-dialog.controller.js" />
-        <option value="$PROJECT_DIR$/public/app/components/dashboard/dashboard.controller.js" />
-        <option value="$PROJECT_DIR$/public/app/services/upload/upload.service.js" />
-        <option value="$PROJECT_DIR$/public/app/services/common/language.js" />
-        <option value="$PROJECT_DIR$/public/app/services/utility/handler.service.js" />
-        <option value="$PROJECT_DIR$/public/app/template/header.html" />
-        <option value="$PROJECT_DIR$/public/assets/global/plugins/angularjs/angular-ui-utils.min.js" />
         <option value="$PROJECT_DIR$/public/assets/global/plugins/angularjs/angular-datatables.js" />
         <option value="$PROJECT_DIR$/public/assets/global/plugins/angular-datatables/2.1.0/angular-datatables.directive.js" />
         <option value="$PROJECT_DIR$/public/assets/global/plugins/angular-datatables/2.1.0/angular-datatables.js" />
@@ -164,7 +421,6 @@
         <option value="$PROJECT_DIR$/public/app/components/master/unit/unit.controller.js" />
         <option value="$PROJECT_DIR$/public/app/services/master/unit.service.js" />
         <option value="$PROJECT_DIR$/public/app/components/master/product/product-add-edit-dialog.html" />
-        <option value="$PROJECT_DIR$/public/app/services/master/product.service.js" />
         <option value="$PROJECT_DIR$/public/app/components/master/product/product-add-edit-dialog.controller.js" />
         <option value="$PROJECT_DIR$/public/app/routes/app.routes.js" />
         <option value="$PROJECT_DIR$/public/app/routes/product_stock.routes.js" />
@@ -181,14 +437,28 @@
         <option value="$PROJECT_DIR$/public/app/components/dialog/dialognumpad.controller.js" />
         <option value="$PROJECT_DIR$/public/app/components/master/route/route.controller.js" />
         <option value="$PROJECT_DIR$/public/app/services/master/route.service.js" />
-        <option value="$PROJECT_DIR$/public/app/services/requisition/requisition.service.js" />
-        <option value="$PROJECT_DIR$/public/app/routes/admin.routes.js" />
-        <option value="$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.html" />
-        <option value="$PROJECT_DIR$/public/app/components/requisition/requisition.html" />
-        <option value="$PROJECT_DIR$/public/app/components/requisition/requisition.controller.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/app/services/ui-template/dialog/dialog.service.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.html" />
+        <option value="$PROJECT_DIR$/public/app/components/dialog/route-dialog.controller.js" />
+        <option value="$PROJECT_DIR$/public/app/components/requisition/requisition.html" />
+        <option value="$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.html" />
+        <option value="$PROJECT_DIR$/public/app/components/delivery/requisition_delivery.html" />
         <option value="$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.controller.js" />
+        <option value="$PROJECT_DIR$/public/app/services/requisition/requisition.service.js" />
+        <option value="$PROJECT_DIR$/public/app/services/return_requisition/return_requisition.service.js" />
+        <option value="$PROJECT_DIR$/public/app/routes/admin.routes.js" />
+        <option value="$PROJECT_DIR$/public/app/services/master/product.service.js" />
+        <option value="$PROJECT_DIR$/public/app/components/requisition/requisition.controller.js" />
+        <option value="$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.controller.js" />
+        <option value="$PROJECT_DIR$/public/app/components/delivery/requisition_delivery.controller.js" />
+        <option value="$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.html" />
+        <option value="$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.controller.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/app/IceFactoryController.js" />
+        <option value="$PROJECT_DIR$/public/login.html" />
+        <option value="$PROJECT_DIR$/public/app/services/master/user.service.js" />
+        <option value="$PROJECT_DIR$/public/app/components/login/login.controller.js" />
       </list>
     </option>
   </component>
@@ -212,9 +482,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1058" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1937" />
+    <option name="height" value="1067" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,6 +501,39 @@
               <item name="IceFactory.FrontEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="IceFactory.FrontEnd" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="IceFactory.FrontEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IceFactory.FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IceFactory.FrontEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IceFactory.FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IceFactory.FrontEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IceFactory.FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IceFactory.FrontEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IceFactory.FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IceFactory.FrontEnd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IceFactory.FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -240,30 +544,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="FullScreen" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548035622505" />
     <property name="editor.config.ad.shown" value="true" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="js.buildTools.gulp.node_interpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
-    <property name="recentsLimit" value="5" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.FrontEnd\public\app\components" />
+      <recent name="D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.FrontEnd\public\app\components\sale_pos" />
       <recent name="D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.FrontEnd\public\app\services\authority" />
       <recent name="D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.FrontEnd\public\app\components\authority\users" />
       <recent name="D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.FrontEnd\public\app\services\master" />
-      <recent name="D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.FrontEnd\public\app\components\master" />
-      <recent name="D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.FrontEnd\public\app\services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.FrontEnd\public\app\services" />
@@ -283,13 +588,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.Index">
+    <configuration name="Index JavaScript" type="JavascriptDebugType" factoryName="JavaScript Debug" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:3000">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+    </configuration>
     <configuration name="Index" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
-        <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" start="true" url="http://localhost:3001" />
+        <browser start="true" url="http://localhost:3000" />
       </EXTENSION>
       <RunnerSettings RunnerId="Basic" />
+      <RunnerSettings RunnerId="debuggableProgram" />
       <ConfigurationWrapper RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="debuggableProgram" />
     </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
@@ -317,6 +628,10 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Index JavaScript" />
+      <item itemvalue="Node.js.Index" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -337,11 +652,12 @@
       <workItem from="1550677116325" duration="2124000" />
       <workItem from="1550994412040" duration="10351000" />
       <workItem from="1553313303832" duration="4168000" />
+      <workItem from="1555751878323" duration="7485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42246000" />
+    <option name="totallyTimeSpent" value="49731000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -367,25 +683,26 @@
     <frame x="-7" y="-7" width="1935" height="1175" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13014056" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32976446" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20145757" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15652174" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32976446" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17450981" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32972974" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.12560387" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23019272" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Changes" order="7" />
+      <window_info anchor="bottom" id="Changes" order="7" weight="0.32972974" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32976446" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,78 +719,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/app/components/dashboard/dashboard.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/requisition_forward/requisition_forward.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/routes/app.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/bootstrap-datepicker3.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/global/plugins/datatables/datatables.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8504" column="113" selection-start-line="8504" selection-start-column="110" selection-end-line="8504" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/global/plugins/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/services/master/product_stock.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/requisition/requisition.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="439" column="6" selection-start-line="439" selection-start-column="6" selection-end-line="439" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
@@ -484,27 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/return_requisition/return_requisition.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/services/master/customer.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/dialog/customer-dialog.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/requisition/requisition.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -529,41 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/dialog/route-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="127" column="90" selection-start-line="127" selection-start-column="90" selection-end-line="127" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/master/product/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/dialog/route-dialog.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/master/product/product-add-edit-dialog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="55" column="118" selection-start-line="55" selection-start-column="113" selection-end-line="55" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/components/master/product/product-add-edit-dialog.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -578,34 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/master/product.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/product_stock/product_stock-dialog.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="414" column="61" selection-start-line="414" selection-start-column="61" selection-end-line="414" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="488" column="29" selection-start-line="488" selection-start-column="23" selection-end-line="488" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/components/ice_bucket/ice_bucket.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -613,37 +791,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/common/language.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/master/user.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/authority/users/users.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/services/authority/users.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="3" column="54" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="317" column="54" selection-start-line="317" selection-start-column="54" selection-end-line="317" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -689,27 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/product_stock/product_stock.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="79" column="45" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/authority/users/users.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="51" column="78" selection-start-line="51" selection-start-column="78" selection-end-line="51" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/routes/admin.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="138" column="69" selection-start-line="138" selection-start-column="69" selection-end-line="138" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/components/dialog/dialognumpad.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -717,33 +847,256 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/requisition/requisition.controller.js">
+    <entry file="file://$PROJECT_DIR$/public/app/components/dialog/route-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="63" column="113" selection-start-line="63" selection-start-column="113" selection-end-line="63" selection-end-column="113" />
+        <state>
+          <caret line="11" column="96" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/public/app/components/product_stock/product_stock.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state>
+          <caret line="79" column="45" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/product_stock/product_stock-dialog.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="25" column="105" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/dialog/route-dialog.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/services/sale_pos/sale_pos.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="122" column="42" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/delivery/requisition_delivery.html" />
+    <entry file="file://$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/services/requisition/requisition.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="91" column="34" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/services/return_requisition/return_requisition.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/requisition/requisition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="147" column="36" selection-start-line="145" selection-start-column="27" selection-end-line="147" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/routes/admin.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="171" column="70" selection-start-line="171" selection-start-column="70" selection-end-line="171" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/master/product/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/routes/app.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/master/product/product-add-edit-dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/requisition/requisition.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="167" column="82" selection-start-line="167" selection-start-column="82" selection-end-line="167" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/services/ui-template/dialog/dialog.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="33" />
+        <state>
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/requisition_forward/requisition_forward.controller.js">
+    <entry file="file://$PROJECT_DIR$/public/app/services/master/product.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="274" lean-forward="true" selection-start-line="274" selection-end-line="274" />
+        <state>
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/sale_pos/sale_pos.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9882">
+          <caret line="840" selection-start-line="840" selection-end-line="840" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/delivery/requisition_delivery.controller.js" />
+    <entry file="file://$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="81" column="41" selection-start-line="81" selection-start-column="41" selection-end-line="81" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/return_requisition/return_requisition.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#button#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html.bak">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/authority/users/users.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="51" column="78" selection-start-line="51" selection-start-column="78" selection-end-line="51" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/IceFactoryController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="60" column="6" lean-forward="true" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#6958#7349#0" />
+            <element signature="e#7391#7783#0" />
+            <element signature="e#7825#8201#0" />
+            <element signature="e#8244#8636#0" />
+            <element signature="e#8677#9067#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="1028" column="74" lean-forward="true" selection-start-line="960" selection-end-line="1028" selection-end-column="74" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="e#38349#38434#0" expanded="true" />
+            <element signature="e#38562#38596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="84" column="10" lean-forward="true" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="92" column="57" lean-forward="true" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+          <folding>
+            <element signature="e#1816#1822#0" expanded="true" />
+            <element signature="n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#12789#12795#0" expanded="true" />
+            <element signature="e#12885#12891#0" expanded="true" />
+            <element signature="e#12968#12974#0" expanded="true" />
+            <element signature="e#13064#13070#0" expanded="true" />
+            <element signature="e#13147#13153#0" expanded="true" />
+            <element signature="e#13245#13251#0" expanded="true" />
+            <element signature="e#13252#13258#0" expanded="true" />
+            <element signature="e#13259#13265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/services/master/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/login/login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="43" column="98" lean-forward="true" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

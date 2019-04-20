@@ -67,6 +67,14 @@ IceFactory.factory("userService", function ($http, $q, $rootScope, handlerServic
             },
         });*/
     }
+
+    function login(username, password) {
+        let request = $http.post($rootScope.settings.apiUrl + "security/authentication", {
+            userlogin_id: username,
+            userlogin_pwd: password
+        });
+        return (request.then(handlerService.handlerSuccess, handlerService.handlerError));
+    }
     //--------------------------------------------------------------------------------
     //
     // Insert data
@@ -108,5 +116,6 @@ IceFactory.factory("userService", function ($http, $q, $rootScope, handlerServic
         initial : initial,
         getddl: getddl,
         search:search,
+        login: login
     });
 });

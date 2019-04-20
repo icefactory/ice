@@ -9,10 +9,6 @@
     <Content Remove="Controllers\IMG\**" />
     <EmbeddedResource Remove="Controllers\IMG\**" />
     <None Remove="Controllers\IMG\**" />
-    <Compile Remove="Controllers\Security\**" />
-    <EmbeddedResource Remove="Controllers\Security\**" />
-    <None Remove="Controllers\Security\**" />
-    <Content Remove="Controllers\Security\**" />
   </ItemGroup>
 
   <ItemGroup>

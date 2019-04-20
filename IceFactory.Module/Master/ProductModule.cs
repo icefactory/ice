@@ -1,19 +1,16 @@
-﻿using IceFactory.Model.Master;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
+using IceFactory.Model.Master;
 using IceFactory.Model.View;
-using IceFactory.Repository.Infrastructure;
 using IceFactory.Repository.UnitOfWork;
 using IceFactory.Utility.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IceFactory.Module.Master
 {
@@ -33,7 +30,8 @@ namespace IceFactory.Module.Master
         /// <param name="includeProperties"></param>
         /// <returns></returns>
         public IQueryable<VDropDownList> GetForDropDownList(Expression<Func<ProductModel, bool>> filter = null,
-            Func<IQueryable<ProductModel>, IOrderedQueryable<ProductModel>> orderBy = null, string includeProperties = "")
+            Func<IQueryable<ProductModel>, IOrderedQueryable<ProductModel>> orderBy = null,
+            string includeProperties = "")
         {
             return UnitOfWork.ProductRepository.Get(filter, orderBy, includeProperties).Select(p => new VDropDownList
             {
@@ -51,7 +49,8 @@ namespace IceFactory.Module.Master
         {
             return await Task.Factory.StartNew(() =>
             {
-                var Product = UnitOfWork.ProductRepository.Get(/*p => p.Status == StatusOfProduct.Enabled*/).OrderBy(o=> o.seq);
+                var Product = UnitOfWork.ProductRepository.Get( /*p => p.Status == StatusOfProduct.Enabled*/)
+                    .OrderBy(o => o.seq);
                 return Product;
             });
         }
@@ -76,7 +75,7 @@ namespace IceFactory.Module.Master
         public async Task<EntityEntry<ProductModel>> InsertAsync(ProductModel Product)
         {
             if (UnitOfWork.ProductRepository
-            .Get(p => p.product_name == Product.product_name /*&& p.Status == StatusOfProduct.Enabled*/).Any())
+                .Get(p => p.product_name == Product.product_name /*&& p.Status == StatusOfProduct.Enabled*/).Any())
                 throw new Exception(new ErrorInfo
                 {
                     Message = $"Can not insert Product code : {Product.product_name} duplicate data",
@@ -88,7 +87,6 @@ namespace IceFactory.Module.Master
             await SaveAsync();
 
             return newProduct;
-
         }
 
         /// <summary>
@@ -155,17 +153,16 @@ namespace IceFactory.Module.Master
 
             await SaveAsync();
         }
+
         public async Task<IQueryable<ProductModel>> getProductByListId(string sListId)
         {
             try
             {
-
                 string sql = string.Format("exec prd_search_byListId {0} "
                     , sListId
-                    );
+                );
 
-                return UnitOfWork.Context.Query<ProductModel>().FromSql(sql).OrderBy(o=> o.seq);
-
+                return UnitOfWork.Context.Query<ProductModel>().FromSql(sql).OrderBy(o => o.seq);
             }
             catch (Exception ex)
             {
@@ -173,7 +170,6 @@ namespace IceFactory.Module.Master
             }
             finally
             {
-
             }
         }
 
@@ -182,16 +178,14 @@ namespace IceFactory.Module.Master
         {
             try
             {
-
                 string sql = string.Format("exec mas_product_search {0} ,'{1}', '{2}'"
                     , objFilter.product_id == null ? "null" : objFilter.product_id.ToString()
                     , objFilter.product_name
                     , objFilter.status
-                    );
+                );
 
 
                 return UnitOfWork.Context.Query<vwProductModel>().FromSql(sql);
-              
             }
             catch (Exception ex)
             {
@@ -199,10 +193,28 @@ namespace IceFactory.Module.Master
             }
             finally
             {
-
             }
         }
 
+        public async Task<IQueryable<vwPriceAgencyModel>> getPriceAgency(int cus_id)
+        {
+            try
+            {
+                string sql = string.Format("exec mas_priceagencyByCusID {0} ,'Y'"
+                    , cus_id
+                );
+
+
+                return UnitOfWork.Context.Query<vwPriceAgencyModel>().FromSql(sql);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+            }
+        }
 
         public async Task<int> executeUpdateProduct(ProductModel objData)
         {
@@ -232,10 +244,11 @@ namespace IceFactory.Module.Master
                     cmd.CommandText = "up_mas_product";
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.Add(new SqlParameter("@productID", SqlDbType.BigInt) { Value = objData.product_id });
-                    cmd.Parameters.Add(new SqlParameter("@productName", SqlDbType.NVarChar) { Value = objData.product_name });
-                    cmd.Parameters.Add(new SqlParameter("@price_in", SqlDbType.BigInt) { Value = objData.price_in });
-                    cmd.Parameters.Add(new SqlParameter("@price_out", SqlDbType.BigInt) { Value = objData.price_out });
+                    cmd.Parameters.Add(new SqlParameter("@productID", SqlDbType.BigInt) {Value = objData.product_id});
+                    cmd.Parameters.Add(new SqlParameter("@productName", SqlDbType.NVarChar)
+                        {Value = objData.product_name});
+                    cmd.Parameters.Add(new SqlParameter("@price_in", SqlDbType.BigInt) {Value = objData.price_in});
+                    cmd.Parameters.Add(new SqlParameter("@price_out", SqlDbType.BigInt) {Value = objData.price_out});
 
 
                     //cmd.Parameters.Add(new SqlParameter("@id", SqlDbType.BigInt) { Direction = ParameterDirection.Output });
@@ -246,7 +259,6 @@ namespace IceFactory.Module.Master
                     }
 
                     return await cmd.ExecuteNonQueryAsync();
-
                 }
             }
             catch (Exception ex)
@@ -255,7 +267,6 @@ namespace IceFactory.Module.Master
             }
             finally
             {
-
             }
         }
 
@@ -287,10 +298,8 @@ namespace IceFactory.Module.Master
                     cmd.CommandText = "up_mas_product_delete";
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.Add(new SqlParameter("@productID", SqlDbType.BigInt) { Value = id });
-                    cmd.Parameters.Add(new SqlParameter("@user_id", SqlDbType.BigInt) { Value = iUserID ?? 1 });
-
-
+                    cmd.Parameters.Add(new SqlParameter("@productID", SqlDbType.BigInt) {Value = id});
+                    cmd.Parameters.Add(new SqlParameter("@user_id", SqlDbType.BigInt) {Value = iUserID ?? 1});
 
 
                     //cmd.Parameters.Add(new SqlParameter("@id", SqlDbType.BigInt) { Direction = ParameterDirection.Output });
@@ -301,7 +310,6 @@ namespace IceFactory.Module.Master
                     }
 
                     return await cmd.ExecuteNonQueryAsync();
-
                 }
             }
             catch (Exception ex)
@@ -310,10 +318,8 @@ namespace IceFactory.Module.Master
             }
             finally
             {
-
             }
         }
-
 
         #endregion
     }

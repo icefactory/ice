@@ -55,7 +55,7 @@ IceFactory.factory("dialogService", function ($uibModal) {
                  "</div>"*/
             '<div class="modal-header"> <h2>{{dialogTitle}} </h2></div>' +
             '<div class="modal-body">' +
-            '<h4> {{dialogMessage}}</h4>' +
+                '<h4 class="alert alert-info"> {{dialogMessage}}</h4>' +
             '</div>' +
             '<div class="modal-footer">' +
             '<button data-dismiss="modal" ng-click="btnCancelClicked();" aria-hidden="true" type="button" class="btn btn-primary" autofocus>ยกเลิก</button>' +

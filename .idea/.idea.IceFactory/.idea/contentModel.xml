@@ -26,6 +26,9 @@
             <e p="Requisition" t="Include">
               <e p="RequisitionController.cs" t="Include" />
             </e>
+            <e p="ReturnRequisition" t="Include">
+              <e p="ReturnRequisitionController.cs" t="Include" />
+            </e>
           </e>
           <e p="BaseController.cs" t="Include" />
           <e p="product_img" t="Include">
@@ -41,6 +44,9 @@
             <e p="packWater.jpg" t="Include" />
             <e p="packWater2.jpg" t="Include" />
             <e p="tube2.jpg" t="Include" />
+          </e>
+          <e p="Security" t="Include">
+            <e p="AuthenticationController.cs" t="Include" />
           </e>
         </e>
         <e p="How_To_Deploy.txt" t="Include" />
@@ -3594,6 +3600,7 @@
         <e p="IceFactory.Model.csproj" t="IncludeRecursive" />
         <e p="master" t="Include">
           <e p="CustomerModel.cs" t="Include" />
+          <e p="PriceAgencyModel.cs" t="Include" />
           <e p="ProductModel.cs" t="Include" />
           <e p="RouteModel.cs" t="Include" />
           <e p="UnitModel.cs" t="Include" />
@@ -3649,6 +3656,9 @@
         </e>
         <e p="ReturnRequisition" t="Include">
           <e p="ReturnRequisitionModule.cs" t="Include" />
+        </e>
+        <e p="Security" t="Include">
+          <e p="AuthenticationModule.cs" t="Include" />
         </e>
       </e>
       <e p="IceFactory.Report.Api" t="IncludeRecursive">

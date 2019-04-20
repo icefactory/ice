@@ -1,28 +1,3 @@
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.csprojAssemblyReference.cache
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.csproj.CoreCompileInputs.cache
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.RazorAssemblyInfo.cache
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.RazorAssemblyInfo.cs
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.AssemblyInfoInputs.cache
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.AssemblyInfo.cs
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.deps.json
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.runtimeconfig.json
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.runtimeconfig.dev.json
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.dll
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.pdb
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Interface.dll
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Model.dll
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Module.dll
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Repository.dll
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Utility.dll
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Interface.pdb
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Model.pdb
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Module.pdb
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Repository.pdb
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Utility.pdb
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.RazorTargetAssemblyInfo.cache
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.csproj.CopyComplete
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.dll
-D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.pdb
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.deps.json
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.runtimeconfig.json
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.runtimeconfig.dev.json
@@ -48,3 +23,28 @@ C:\Users\kanokwan.rod\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFacto
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.csproj.CopyComplete
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.dll
 C:\Users\kanokwan.rod\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.deps.json
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.runtimeconfig.json
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.runtimeconfig.dev.json
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Api.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Interface.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Model.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Module.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Repository.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Utility.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Interface.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Model.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Module.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Repository.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\bin\Debug\netcoreapp2.1\IceFactory.Utility.pdb
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.csprojAssemblyReference.cache
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.csproj.CoreCompileInputs.cache
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.RazorAssemblyInfo.cache
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.RazorAssemblyInfo.cs
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.AssemblyInfoInputs.cache
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.AssemblyInfo.cs
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.RazorTargetAssemblyInfo.cache
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.csproj.CopyComplete
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.dll
+D:\myWork\IceFactory Project\SourceCode\IceFactory\IceFactory.Api\obj\Debug\netcoreapp2.1\IceFactory.Api.pdb

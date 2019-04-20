@@ -101,7 +101,7 @@ angular.module('IceFactory').controller("DialogRouteController", function ($root
 
     $scope.btnSaveClicked = function () {
 
-        console.log(selectData);
+        //console.log(selectData);
 
         $uibModalInstance.close(selectData);
     };

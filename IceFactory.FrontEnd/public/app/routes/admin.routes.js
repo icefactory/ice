@@ -168,7 +168,8 @@ angular.module('admin.route', []).config(function ($stateProvider) {
                             'app/components/dialog/route-dialog.controller.js',
                             'app/components/return_requisition/return_requisition.controller.js',
                             'app/services/return_requisition/return_requisition.service.js',
-                            //'app/components/product_stock/product_stock-dialog.controller.js',
+                            'app/components/dialog/customer-dialog.controller.js',
+                            'app/services/master/customer.service.js',
                             'app/components/dialog/dialognumpad.controller.js',
                             'app/services/master/route.service.js',
 
@@ -196,7 +197,7 @@ angular.module('admin.route', []).config(function ($stateProvider) {
                             'app/services/sale_pos/sale_pos.service.js',
                             //'app/components/product_stock/product_stock-dialog.controller.js',
                             'app/components/dialog/dialognumpad.controller.js',
-                            'app/services/master/route.service.js',,
+                            'app/services/master/route.service.js',
                             'app/components/dialog/customer-dialog.controller.js',
                             'app/services/master/customer.service.js'
 
@@ -207,6 +208,31 @@ angular.module('admin.route', []).config(function ($stateProvider) {
             }
         })
 
+        .state('requisition_delivery', {
+            url: "/requisition_delivery",
+            templateUrl: "app/components/delivery/requisition_delivery.html",
+            controller: "RequisitionDeliveryController",
+            resolve: {
+                deps: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'IceFactory',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            'app/services/master/product.service.js',
+
+                            'app/components/dialog/route-dialog.controller.js',
+                            'app/components/delivery/requisition_delivery.controller.js',
+                            'app/services/sale_pos/sale_pos.service.js',
+                            //'app/components/product_stock/product_stock-dialog.controller.js',
+                            'app/components/dialog/dialognumpad.controller.js',
+                            'app/services/master/route.service.js',
+                            'app/components/dialog/customer-dialog.controller.js',
+                            'app/services/master/customer.service.js'
+                        ]
+                    });
+                }]
+            }
+        })
         .state('ice_bucket', {
             url: "/ice_bucket",
             templateUrl: "app/components/ice_bucket/ice_bucket.html",
